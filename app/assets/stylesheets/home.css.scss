@@ -1,3 +1,30 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#hero {
+	background-color: #133638;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0 30px 0;
+	h1 {
+		font-size: 32px; 
+		font-weight: 200;
+		margin-bottom: 30px;
+	}
+}
+
+.apply-button {
+	text-transform: uppercase;
+	color: #133638;
+	@include border-radius(8px);
+	background: #fff;
+	padding: 15px 20px;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 17px;
+	letter-spacing: 2px;
+	border-bottom: 5px solid #68c0d5;
+	&:hover {
+		text-decoration: none;
+	}
+}

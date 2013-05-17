@@ -1,3 +1,9 @@
 #footer
   .container
-    %p= raw("&copy; Copyright Maven ") + Time.zone.now.year.to_s
+    .row.uppercase
+      .span4
+        %p= raw("&copy; Copyright Maven ") + Time.zone.now.year.to_s
+      .span4.center
+        %p Maven
+      .span4{style: "text-align: right;"}
+        %p Links

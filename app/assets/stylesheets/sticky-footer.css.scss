@@ -13,17 +13,21 @@ body {
   height: auto !important;
   height: 100%;
   /* Negative indent footer by it's height */
-  margin: 0 auto -60px;
+  margin: 0 auto -50px;
 }
 
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-  height: 60px;
+  height: 50px;
 }
 #footer {
   background-color: #133638;
   color: #fff;
+  p {
+    line-height: 50px; 
+    margin: 0;
+  }
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */

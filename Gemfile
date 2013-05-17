@@ -12,3 +12,8 @@ end
 gem 'jquery-rails'
 gem 'mongoid', '~>3.0.4'
 gem 'newrelic_rpm'
+gem 'haml'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass-rails'
+gem 'figaro'
+gem 'devise'

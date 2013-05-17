@@ -2,11 +2,15 @@
 @import "bootstrap-responsive";
 @import "sticky-footer";
 @import "home";
+@import "fonts";
 
-
-body { padding: 0px!important; }
+body { 
+	padding: 0px!important; 
+	font-family: 'proxima_nova_rgregular';
+}
 .center { text-align: center; }
 .justified { text-align: justify; }
 .no-margin { margin: 0; }
 .uppercase { text-transform: uppercase; }
 
+.bitter {font-family: 'Bitter', serif;}

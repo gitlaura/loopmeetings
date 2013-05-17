@@ -2,10 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #hero {
-	background-color: #133638;
+	background-color: #003739;
 	color: #fff;
 	text-align: center;
 	padding: 20px 0 30px 0;
+	border-bottom: 1px solid #031818;
+	border-top: 1px solid #031818;
 	h1 {
 		font-size: 32px; 
 		font-weight: 200;
@@ -18,19 +20,19 @@
 	color: #133638;
 	@include border-radius(8px);
 	background: #fff;
-	padding: 15px 20px;
+	padding: 12px 20px;
 	display: inline-block;
 	font-weight: 500;
 	font-size: 17px;
 	letter-spacing: 2px;
-	border-bottom: 5px solid #68c0d5;
+	border-bottom: 5px solid #42C2D8;
 	&:hover {
 		text-decoration: none;
 	}
 	&.button-dark {
-		background: #68c0d5;
+		background: #42C2D8;
 		color: #fff;
-		border-bottom: 5px solid #133638;
+		border-bottom: 5px solid #003739;
 	}
 }
 
@@ -48,7 +50,9 @@
 		margin: 0;
 	}
 	p {
-		font-size: 15px;
+		font-size: 17px;
+		color: #707173;
+		line-height: 1.5;
 	}
 }
 #make-connections {
@@ -66,6 +70,8 @@
 	color: #636466;
 }
 .dark {
-	background: rgba(244,95,70,1);
+	background: #FF492C;
 	color: #fff;
+	border-bottom: 1px solid #C90018;
+	border-top: 1px solid #C90018;
 }

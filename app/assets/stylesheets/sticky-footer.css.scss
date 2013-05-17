@@ -19,11 +19,12 @@ body {
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-  height: 50px;
+  height: 49px;
 }
 #footer {
   background-color: #133638;
   color: #fff;
+  border-top: 1px solid #031818;
   p {
     line-height: 50px; 
     margin: 0;

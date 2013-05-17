@@ -1,16 +1,16 @@
 .navbar.no-margin
   .navbar-inner{style: "background: #fff;" }
     .container
-      = link_to image_tag('logo.png'), root_url, class: 'brand'
+      = link_to image_tag('logo.png', style: "height: 42px;"), root_url, class: 'brand'
       %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
       .nav-collapse.collapse
         %ul.nav.pull-right
-          %li{class: ("active" if params[:controller] == "home" && params[:action] == "index")}
-            = link_to "HOW IT WORKS"
-          %li{class: ("active" if params[:controller] == "home" && params[:action] == "learn")}
+          %li
+            = link_to "HOW IT WORKS", "#howitworks"
+          %li
             = link_to "LEARN MORE"
-          %li{class: ("active" if params[:controller] == "home" && params[:action] == "apply")}
+          %li
             = link_to "APPLY"

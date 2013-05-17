@@ -3,3 +3,10 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $ ->
 	$("#hero-photo").backstretch('assets/hero-photo.jpg')
+
+	$(".scroll").click (e) ->
+	  e.preventDefault()
+	  id = $(this).attr('href')
+	  $("html, body").animate
+	    scrollTop: $(id).offset().top
+	  , 500

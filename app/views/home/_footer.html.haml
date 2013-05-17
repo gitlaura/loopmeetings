@@ -4,6 +4,9 @@
       .span4
         %p= raw("&copy; Copyright Maven ") + Time.zone.now.year.to_s
       .span4.center
-        %p Maven
+        %p= image_tag "footer-logo.png"
       .span4{style: "text-align: right;"}
-        %p Links
+        %p
+          = link_to "How it Works"
+          = link_to "Learn More"
+          = link_to "Apply"

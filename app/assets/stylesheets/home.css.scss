@@ -27,10 +27,44 @@
 	&:hover {
 		text-decoration: none;
 	}
+	&.button-dark {
+		background: #68c0d5;
+		color: #fff;
+		border-bottom: 5px solid #133638;
+	}
 }
 
 #hero-photo {
 	height: 500px;
 	background-image: url(hero-photo.jpg);
 	background-position: 0px -130px;
+}
+
+#how-it-works {
+	margin-top: 30px;
+	h4 {
+		font-size: 23px;
+		font-weight: 100;
+	}
+	p {
+		font-size: 15px;
+	}
+}
+#make-connections {
+	margin-top: 30px;
+	h4 {
+		font-size: 23px;
+		font-weight: 100;
+	}
+}
+.light, .dark {
+	padding: 30px 0;
+}
+.light {
+	background: #fbfbfb;
+	color: #636466;
+}
+.dark {
+	background: rgba(244,95,70,1);
+	color: #fff;
 }

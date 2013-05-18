@@ -10,3 +10,8 @@ $ ->
 	  $("html, body").animate
 	    scrollTop: $(id).offset().top
 	  , 500
+
+	$('.flash').click ->
+		$(this).remove()
+
+	$('.flash').delay(2000).fadeOut()

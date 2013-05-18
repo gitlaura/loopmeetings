@@ -14,6 +14,7 @@
             %li= link_to "HOW IT WORKS", root_url+"#howitworks"
           %li= link_to "LEARN MORE", learn_more_path
           - if user_signed_in?
+            %li= link_to "YOUR PROFILE", edit_user_registration_path
             %li= link_to "SIGN OUT", destroy_user_session_path, method: :delete
           - else
             %li= link_to "APPLY", new_user_registration_path

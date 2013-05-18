@@ -8,7 +8,7 @@
         %span.icon-bar
       .nav-collapse.collapse
         %ul.nav.pull-right
-          - if params[:controller] == :home && params[:action] == :index
+          - if params[:controller] == "home" && params[:action] == "index"
             %li= link_to "HOW IT WORKS", "#howitworks", class: "scroll"
           - else
             %li= link_to "HOW IT WORKS", root_url+"#howitworks"

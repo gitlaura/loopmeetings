@@ -7,6 +7,9 @@
         %p= image_tag "footer-logo.png"
       .span4{style: "text-align: right;"}
         %p
-          = link_to "How it Works", "#howitworks", class: "scroll"
+          - if params[:controller] == :home && params[:action] == :index
+            = link_to "HOW IT WORKS", "#howitworks", class: "scroll"
+          - else
+            = link_to "HOW IT WORKS", root_url+"#howitworks"
           = link_to "Learn More", learn_more_path
           = link_to "Apply", new_user_registration_path

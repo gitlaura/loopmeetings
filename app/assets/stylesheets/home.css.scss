@@ -14,6 +14,18 @@
 	}
 }
 
+@media (min-width: 1200px) {
+	.navbar .container {
+		width: 1170px!important;
+	}
+
+}
+
+@media (min-width: 980px) and (max-width: 1120px) {
+	.navbar .container {
+		width: 940px!important;
+	}
+}
 #hero {
 	background-color: #003739;
 	color: #fff;

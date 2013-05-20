@@ -48,6 +48,8 @@ class User
 
   field :questions
 
+  validates_presence_of :full_name, :phone, :linkedin, :employer, :job_title, :job_description, :birthday, :hobbies, :networking_goals, :job_search_status, :match_preferences, :industry_interests, :why_interested, :coffee_or_lunch, :times, :neighborhoods
+
   mount_uploader :resume, ResumeUploader
 
   def full_name

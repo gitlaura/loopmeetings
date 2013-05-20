@@ -26,6 +26,13 @@ class User
 
   field :first_name
   field :last_name
+  field :phone
+  field :linkedin
+  field :employer
+  field :job_title
+  field :job_description
+  field :birthday, type: Date
+  field :hobbies
 
   def full_name
     if new_record?

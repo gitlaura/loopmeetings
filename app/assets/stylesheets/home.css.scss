@@ -27,12 +27,12 @@
 	}
 }
 #hero {
-	background-color: #003739;
+	background-color: #133638;
 	color: #fff;
 	text-align: center;
 	padding: 20px 0 30px 0;
-	border-bottom: 1px solid #031818;
-	border-top: 1px solid #031818;
+	border-bottom: 1px solid #081718;
+	border-top: 1px solid #081718;
 	h1 {
 		font-size: 32px; 
 		font-weight: 200;
@@ -50,14 +50,14 @@
 	font-weight: 500;
 	font-size: 17px;
 	letter-spacing: 2px;
-	border-bottom: 5px solid #42C2D8;
+	border-bottom: 5px solid #68C0D5;
 	&:hover {
 		text-decoration: none;
 	}
 	&.button-dark {
-		background: #42C2D8;
+		background: #68C0D5;
 		color: #fff;
-		border-bottom: 5px solid #003739;
+		border-bottom: 5px solid #133638;
 	}
 }
 
@@ -95,8 +95,8 @@
 	color: #636466;
 }
 .dark {
-	background: #FF492C;
+	background: #F45F46;
 	color: #fff;
-	border-bottom: 1px solid #C90018;
-	border-top: 1px solid #C90018;
+	border-bottom: 1px solid #B8282F;
+	border-top: 1px solid #B8282F;
 }

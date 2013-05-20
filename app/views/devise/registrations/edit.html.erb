@@ -11,8 +11,6 @@
       <%= f.input :email %>
       <%= f.input :phone %>
       <%= f.input :birthday, as: :date, order: [:month, :day, :year], start_year: Date.today.year - 90, end_year: Date.today.year %>
-      <%= f.input :password %><i>(leave blank if you don't want to change it)</i>
-      <%= f.input :password_confirmation %>
     </fieldset>
     
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -45,8 +43,6 @@
       <%= f.input :neighborhoods, as: :check_boxes, collection: ["Gold Coast", "Lakeview", "Lincoln Park", "Loop", "River North", "River West", "South Loop", "West Loop", "Wicker Park"], label: "In which of the following Chicago neighborhood(s) would you like to you meet?" %>
       <%= f.input :questions, as: :text, input_html: { rows: 5 }, label: "Any questions or concerns?" %>
     </fieldset>
-    
-    <%= f.input :current_password %><i>(we need your current password to confirm your changes)</i>
     
     <div><%= f.submit "Update", class: "btn" %></div>
   <% end %>

@@ -8,7 +8,7 @@
     <%= f.input :full_name, :autofocus => true %>
     <%= f.input :email %>
     <%= f.input :phone %>
-    <%= f.input :birthday %>
+    <%= f.input :birthday, as: :date, order: [:month, :day, :year], start_year: Date.today.year - 90, end_year: Date.today.year %>
     <%= f.input :password %><i>(leave blank if you don't want to change it)</i>
     <%= f.input :password_confirmation %>
     
@@ -24,6 +24,10 @@
       <%= f.input :hobbies, as: :text, input_html: { rows: 5 } %>
       <%= link_to File.basename(current_user.resume.path), current_user.resume.url if current_user.resume %>
       <%= f.input :resume %>
+    </fieldset>
+
+    <fieldset>
+      <%= f.input :networking_goals, as: :check_boxes, collection: ["Making $$", "Meeting people"] %>
     </fieldset>
     
     <%= f.input :current_password %><i>(we need your current password to confirm your changes)</i>

@@ -36,6 +36,18 @@ class User
   field :resume
   field :resume_cache
 
+  field :networking_goals
+  field :job_search_status
+  field :match_preferences
+  field :industry_interests
+  field :why_interested
+
+  field :coffee_or_lunch
+  field :times
+  field :neighborhoods
+
+  field :questions
+
   mount_uploader :resume, ResumeUploader
 
   def full_name

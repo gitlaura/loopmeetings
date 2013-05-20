@@ -33,6 +33,10 @@ class User
   field :job_description
   field :birthday, type: Date
   field :hobbies
+  field :resume
+  field :resume_cache
+
+  mount_uploader :resume, ResumeUploader
 
   def full_name
     if new_record?

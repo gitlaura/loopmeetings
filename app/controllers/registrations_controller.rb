@@ -24,8 +24,7 @@ class RegistrationsController < Devise::RegistrationsController
 protected
 
 	def needs_password?(user, params)
-    user.email != params[:user][:email] ||
-      !params[:user][:password].blank?
+    !params[:user][:password].blank?
   end
   
   def after_update_path_for(resource)

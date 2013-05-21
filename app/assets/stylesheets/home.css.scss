@@ -90,17 +90,31 @@
 .light, .dark {
 	padding: 30px 0;
 }
+.teal {
+	background: #42C2D7;
+	color: #fff;
+	padding: 15px 0 30px 0;
+	.apply-button {
+		border-bottom: 5px solid #002A31;
+		color: #002A31;
+	}
+}
 .light {
 	background: #fbfbfb;
 	color: #636466;
 }
 .dark {
-	background: #F45F46;
+	background: #FF492C;
 	color: #fff;
 	border-bottom: 1px solid #B8282F;
 	border-top: 1px solid #B8282F;
 }
 
+a { color: #35ADBF; }
+
 legend {
 	margin: 0;
+}
+label {
+	color: #8C8C8E;
 }

@@ -1,0 +1,27 @@
+.dark.center
+	.container
+		.row
+			%h2.span12.bitter Networking sucks.  We're changing that.
+.light
+	.container{style: 'color: #828385; font-size: 20px; line-height: 1.2; font-weight: 100;'}
+		.row
+			.span12
+				%h1.bitter{style: "color: #003939; margin-bottom: 20px;"} What is Maven?
+				%p Maven helps you meet interesting people who will be good additions to your professional network. We set up a coffee meeting for you and other professionals so you can get to know each other in a relaxed setting.
+		.row
+			.span12
+				%h1.bitter{style: "color: #003939; margin-bottom: 20px;"} What else should I know?
+				%h3.bitter Logistics
+				%ul
+					%li Once we match you with great connections, we will contact you to determine your availability.
+					%li We will let you know when and where to go, along with some details about your meeting members.
+					%li Payment will be requested via email before your first meeting.
+					%li One free coffee is included with your payment.
+				%h3.bitter Not-so-fine-print
+				%ul 
+					%li We screen...
+.teal.center
+	.container
+		.row
+			%h2.span12.bitter{style: "margin-bottom: 20px;"} Ready?
+			= link_to "Apply for membership", new_user_registration_path, class: "apply-button"

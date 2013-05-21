@@ -114,7 +114,16 @@ a { color: #35ADBF; }
 
 legend {
 	margin: 0;
+	border: none;
+	font-family: 'Bitter', serif; font-weight: 100;
 }
-label {
+label, legend {
 	color: #8C8C8E;
+}
+
+#learn-more {
+	color: #828385; font-size: 20px; line-height: 26px; font-weight: 100;
+	li {
+		line-height: 26px;
+	}
 }

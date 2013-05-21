@@ -6,7 +6,7 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container" style="padding: 40px 0;">
 	<%= simple_form_for(resource, :as => resource_name, 
 																:url => registration_path(resource_name), 
 																:html => {:class => 'form-vertical'}) do |f| %>
@@ -21,6 +21,8 @@
 		  <%= f.input :password_confirmation %>
 		</fieldset>
 
+		<hr>
+
 	  <fieldset>
 	  	<legend>About Your Work</legend>
 		  <%= f.input :linkedin, label: "LinkedIn Profile URL" %>
@@ -31,6 +33,8 @@
 		  <%= f.input :resume, label: "Please upload the most recent version of your resume. (optional)" %>
 	  </fieldset>
 
+		<hr>
+
 	  <fieldset>
 	  	<legend>Networking Goals</legend>
 	  	<%= f.input :networking_goals, as: :check_boxes, collection: ['Find a job', 'Meet potential hires', 'Sell my product or service', 'Grow my business', 'Find business partners', 'Talk with investors', 'Learn more about my industry', 'Learn more about a new industry', 'Learn about different careers', 'Just moved to a new city', 'Meet new friends', 'Find mentors', 'Open doors', 'Talk with interesting people', 'Expand my network', 'Other'], label: "Why are you interested in Maven?" %>
@@ -40,6 +44,8 @@
 
 		  <%= f.input :why_interested, as: :text, input_html: { rows: 5 }, label: "In your own words, why do you want to join Maven? The more specific you are, the better we are able to match you." %>
 	  </fieldset>
+
+		<hr>
 
 	  <fieldset>
 	  	<legend>Availability</legend>

@@ -9,7 +9,7 @@
 <div class="container" style="padding: 40px 0;">
 	<%= simple_form_for(resource, :as => resource_name, 
 																:url => registration_path(resource_name), 
-																:html => {:class => 'form-vertical'}) do |f| %>
+																:html => {:class => 'form-horizontal'}) do |f| %>
 	  <%= devise_error_messages! %>
 	  <fieldset>
 	  	<legend>Account Information</legend>
@@ -37,12 +37,61 @@
 
 	  <fieldset>
 	  	<legend>Networking Goals</legend>
-	  	<%= f.input :networking_goals, as: :check_boxes, collection: ['Find a job', 'Meet potential hires', 'Sell my product or service', 'Grow my business', 'Find business partners', 'Talk with investors', 'Learn more about my industry', 'Learn more about a new industry', 'Learn about different careers', 'Just moved to a new city', 'Meet new friends', 'Find mentors', 'Open doors', 'Talk with interesting people', 'Expand my network', 'Other'], label: "Why are you interested in Maven?" %>
-	  	<%= f.input :job_search_status, as: :radio_buttons, collection: ["Yes – actively searching", "Yes - it's not urgent", "Maybe - I'm open to new opportunities", "No - not right now", "No - I love my job"], label: "Are you looking for a new job?" %>
-		  <%= f.input :match_preferences, as: :check_boxes, collection: ["Mentees (typically professionals who are more junior)", "Peers (typically professionals who are at a similar level)", "Mentors (typically professionals who are more senior)"], label: "What type of people are you interested in meeting through Maven?" %>
-		  <%= f.input :industry_interests, as: :check_boxes, collection: ['Agriculture', 'Accounting', 'Advertising', 'Aerospace', 'Apparel & Accessories', 'Automotive', 'Banking', 'Broadcasting', 'Business', 'Computer Science', 'Consumer Products', 'eCommerce', 'Education', 'Energy', 'Entertainment', 'Finance', 'Food & Beverage', 'Health Care', 'Information Technology', 'Legal', 'Management Consulting', 'Manufacturing', 'Music', 'Pharmaceuticals', 'Private Equity', 'Publishing', 'Real Estate', 'Retail & Wholesale', 'Software', 'Sports', 'Startups', 'Technology', 'Telecommunications', 'Travel', 'Venture Capital'], label: "What industries are you interested in discussing?" %>
+      <div class="control-group check_boxes required user_networking_goals">
+        <label class="check_boxes required control-label">
+          <abbr title="required">*</abbr> Why are you interested in Maven?
+        </label>
+        <div class="controls">
+          <table class="table">
+            <%= hidden_field_tag "user[networking_goals][]", nil %>
+            <% ['Find a job', 'Meet potential hires', 'Sell my product or service', 'Grow my business', 'Find business partners', 'Talk with investors', 'Learn more about my industry', 'Learn more about a new industry', 'Learn about different careers', 'Just moved to a new city', 'Meet new friends', 'Find mentors', 'Open doors', 'Talk with interesting people', 'Expand my network', 'Other'].in_groups_of(4) do |row_items| %>
+              <tr>
+                <% for item in row_items %>
+                  <td>
+                    <% unless item.blank? %>
+                    <label class="checkbox">
+                      <%= check_box_tag "user[networking_goals][]", item%>
+                      <%= item %>
+                    </label>
+                    <% end %>
+                  </td>
+                <% end %>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+      </div>
+      <%= f.input :job_search_status, as: :radio_buttons, collection: ["Yes – actively searching", "Yes - it's not urgent", "Maybe - I'm open to new opportunities", "No - not right now", "No - I love my job"], label: "Are you looking for a new job?" %>
+      <br>
+      <%= f.input :match_preferences, as: :check_boxes, collection: ["Mentees (typically professionals who are more junior)", "Peers (typically professionals who are at a similar level)", "Mentors (typically professionals who are more senior)"], label: "What type of people are you interested in meeting through Maven?" %>
+      <br>
 
-		  <%= f.input :why_interested, as: :text, input_html: { rows: 5 }, label: "In your own words, why do you want to join Maven? The more specific you are, the better we are able to match you." %>
+      <div class="control-group check_boxes required user_industry_interests">
+        <label class="check_boxes required control-label">
+          <abbr title="required">*</abbr> What industries are you interested in discussing?
+        </label>
+        <div class="controls">
+          <table class="table">
+            <%= hidden_field_tag "user[industry_interests][]", nil %>
+            <% ['Agriculture', 'Accounting', 'Advertising', 'Aerospace', 'Apparel & Accessories', 'Automotive', 'Banking', 'Broadcasting', 'Business', 'Computer Science', 'Consumer Products', 'eCommerce', 'Education', 'Energy', 'Entertainment', 'Finance', 'Food & Beverage', 'Health Care', 'Information Technology', 'Legal', 'Management Consulting', 'Manufacturing', 'Music', 'Pharmaceuticals', 'Private Equity', 'Publishing', 'Real Estate', 'Retail & Wholesale', 'Software', 'Sports', 'Startups', 'Technology', 'Telecommunications', 'Travel', 'Venture Capital'].in_groups_of(5) do |row_items| %>
+              <tr>
+                <% for item in row_items %>
+                  <td>
+                    <% unless item.blank? %>
+                    <label class="checkbox">
+                      <%= check_box_tag "user[industry_interests][]", item%>
+                      <%= item %>
+                    </label>
+                    <% end %>
+                  </td>
+                <% end %>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+      </div>
+
+      <%= f.input :why_interested, as: :text, input_html: { rows: 5 }, label: "In your own words, why do you want to join Maven? The more specific you are, the better we are able to match you." %>
 	  </fieldset>
 
 		<hr>
@@ -50,13 +99,70 @@
 	  <fieldset>
 	  	<legend>Availability</legend>
 	  	<%= f.input :coffee_or_lunch, as: :radio_buttons, collection: ["Coffee", "Lunch", "I don't care"], label: "Do you prefer coffee or lunch meetings?" %>
-		  <%= f.input :times, as: :check_boxes, collection: ["7:00 am", "8:00 am", "9:00 am", "10:00 am", "11:00 am", "12:00 am", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm"], label: "What times work best for you for a coffee meeting?" %>
-		  <%= f.input :neighborhoods, as: :check_boxes, collection: ["Gold Coast", "Lakeview", "Lincoln Park", "Loop", "River North", "River West", "South Loop", "West Loop", "Wicker Park"], label: "In which of the following Chicago neighborhood(s) would you like to you meet?" %>
+
+      <div class="control-group check_boxes required user_times">
+        <label class="check_boxes required control-label">
+          <abbr title="required">*</abbr> What times work best for you for a coffee meeting?
+        </label>
+        <div class="controls">
+          <table class="table">
+            <%= hidden_field_tag "user[times][]", nil %>
+            <% ["7:00 am", "8:00 am", "9:00 am", "10:00 am", "11:00 am", "12:00 am", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm"].in_groups_of(3) do |row_items| %>
+              <tr>
+                <% for item in row_items %>
+                  <td>
+                    <% unless item.blank? %>
+                    <label class="checkbox">
+                      <%= check_box_tag "user[times][]", item %>
+                      <%= item %>
+                    </label>
+                    <% end %>
+                  </td>
+                <% end %>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+      </div>
+
+      <div class="control-group check_boxes required user_neighborhoods">
+        <label class="check_boxes required control-label">
+          <abbr title="required">*</abbr> In which of the following Chicago neighborhood(s) would you like to you meet?
+        </label>
+        <div class="controls">
+          <table class="table">
+            <%= hidden_field_tag "user[neighborhoods][]", nil %>
+            <% ["Gold Coast", "Lakeview", "Lincoln Park", "Loop", "River North", "River West", "South Loop", "West Loop", "Wicker Park"].in_groups_of(3) do |row_items| %>
+              <tr>
+                <% for item in row_items %>
+                  <td>
+                    <% unless item.blank? %>
+                    <label class="checkbox">
+                      <%= check_box_tag "user[neighborhoods][]", item %>
+                      <%= item %>
+                    </label>
+                    <% end %>
+                  </td>
+                <% end %>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+      </div>
+
 		  <%= f.input :questions, as: :text, input_html: { rows: 5 }, label: "Any questions or concerns?" %>
 	  </fieldset>
 
-	  <%= f.submit "Sign up", class: "btn" %>
+
+    <div class="control-group">
+    	<div class="controls">
+    		<%= f.submit "Sign up", class: "apply-button button-dark", style: "border-top: none; border-left: none; border-right: none;" %>
+    		<br><br>
+				<%= render "devise/shared/links" %>
+    	</div>
+    </div>
+	  
 	<% end %>
 
-	<%= render "devise/shared/links" %>
+	
 </div>

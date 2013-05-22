@@ -48,16 +48,12 @@ class User
 
   field :questions
 
-  validates_presence_of :full_name, :email, :phone, :linkedin, :employer, :job_title, :job_description, :birthday, :hobbies, :networking_goals, :job_search_status, :match_preferences, :industry_interests, :why_interested, :coffee_or_lunch, :times, :neighborhoods
+  validates_presence_of :full_name, :email, :phone, :linkedin, :employer, :job_title, :job_description, :hobbies, :networking_goals, :job_search_status, :match_preferences, :industry_interests, :why_interested, :coffee_or_lunch, :times, :neighborhoods
 
   mount_uploader :resume, ResumeUploader
 
   def full_name
-    if new_record?
-      ""
-    else
-      [first_name, last_name].join(' ')
-    end
+    [first_name, last_name].join(' ')
   end
 
   def full_name=(name)

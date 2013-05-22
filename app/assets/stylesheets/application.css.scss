@@ -7,6 +7,7 @@
 body { 
 	padding: 0px!important; 
 	font-family: 'proxima_nova_rgregular';
+	background: #FBFBFB;
 }
 .center { text-align: center; }
 .justified { text-align: justify; }
@@ -17,6 +18,7 @@ body {
 
 .navbar-inner {
 	@include border-radius(0);
+	background: #FBFBFB;
 }
 .navbar .nav > li > a {
 	padding: 23px 15px 23px;
@@ -27,10 +29,10 @@ body {
 }
 .navbar .nav > li.active > a {
 	color: #C90018;
-	background: #fff;
+	background: #FBFBFB;
 	box-shadow: none;
 	&:hover {
-		background: #fff;
+		background: #FBFBFB;
 		box-shadow: none;
 	}
 }

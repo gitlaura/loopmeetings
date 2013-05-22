@@ -13,7 +13,7 @@
 	  <%= devise_error_messages! %>
 	  <fieldset>
 	  	<legend>Account Information</legend>
-		  <%= f.input :full_name, :autofocus => true %>
+		  <%= f.input :full_name, :autofocus => true, input_html: { value: (resource.full_name == " " ? "" : resource.full_name) } %>
 		  <%= f.input :email %>
 		  <%= f.input :phone %>
 			<%= f.input :birthday, as: :date, order: [:month, :day, :year], start_year: Date.today.year - 90, end_year: Date.today.year %>
@@ -104,7 +104,7 @@
         </label>
         <div class="controls">
           <table class="table">
-            <% ["7:00 am", "8:00 am", "9:00 am", "10:00 am", "11:00 am", "12:00 am", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm"].in_groups_of(3) do |row_items| %>
+            <% ["7:00 am", "8:00 am", "9:00 am", "10:00 am", "11:00 am", "12:00 am", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm", "6:00 pm"].in_groups_of(3) do |row_items| %>
               <tr>
                 <% for item in row_items %>
                   <td>

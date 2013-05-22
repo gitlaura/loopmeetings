@@ -151,18 +151,15 @@
       </div>
 
 		  <%= f.input :questions, as: :text, input_html: { rows: 5 }, label: "Any questions or concerns?" %>
+	    
+	    <div class="control-group">
+	    	<div class="controls">
+	    		<%= f.submit "Sign up", class: "apply-button button-dark", style: "border-top: none; border-left: none; border-right: none;" %>
+	    		<br><br>
+					<%= render "devise/shared/links" %>
+	    	</div>
+	    </div>
+
 	  </fieldset>
-
-
-    <div class="control-group">
-    	<div class="controls">
-    		<%= f.submit "Sign up", class: "apply-button button-dark", style: "border-top: none; border-left: none; border-right: none;" %>
-    		<br><br>
-				<%= render "devise/shared/links" %>
-    	</div>
-    </div>
-	  
 	<% end %>
-
-	
 </div>

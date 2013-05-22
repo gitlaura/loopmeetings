@@ -178,9 +178,13 @@
       </div>
 
       <%= f.input :questions, as: :text, input_html: { rows: 5 }, label: "Any questions or concerns?" %>
+      <div class="control-group">
+        <div class="controls">
+          <div><%= f.submit "Update", class: "apply-button button-dark", style: "border-top: none; border-right: none; border-left: none;" %></div>
+        </div>
+      </div>
     </fieldset>
     
-    <div><%= f.submit "Update", class: "btn" %></div>
   <% end %>
 
   <h3>Cancel my account</h3>

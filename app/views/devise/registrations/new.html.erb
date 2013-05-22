@@ -43,7 +43,6 @@
         </label>
         <div class="controls">
           <table class="table">
-            <%= hidden_field_tag "user[networking_goals][]", nil %>
             <% ['Find a job', 'Meet potential hires', 'Sell my product or service', 'Grow my business', 'Find business partners', 'Talk with investors', 'Learn more about my industry', 'Learn more about a new industry', 'Learn about different careers', 'Just moved to a new city', 'Meet new friends', 'Find mentors', 'Open doors', 'Talk with interesting people', 'Expand my network', 'Other'].in_groups_of(4) do |row_items| %>
               <tr>
                 <% for item in row_items %>
@@ -72,7 +71,6 @@
         </label>
         <div class="controls">
           <table class="table">
-            <%= hidden_field_tag "user[industry_interests][]", nil %>
             <% ['Agriculture', 'Accounting', 'Advertising', 'Aerospace', 'Apparel & Accessories', 'Automotive', 'Banking', 'Broadcasting', 'Business', 'Computer Science', 'Consumer Products', 'eCommerce', 'Education', 'Energy', 'Entertainment', 'Finance', 'Food & Beverage', 'Health Care', 'Information Technology', 'Legal', 'Management Consulting', 'Manufacturing', 'Music', 'Pharmaceuticals', 'Private Equity', 'Publishing', 'Real Estate', 'Retail & Wholesale', 'Software', 'Sports', 'Startups', 'Technology', 'Telecommunications', 'Travel', 'Venture Capital'].in_groups_of(5) do |row_items| %>
               <tr>
                 <% for item in row_items %>
@@ -106,7 +104,6 @@
         </label>
         <div class="controls">
           <table class="table">
-            <%= hidden_field_tag "user[times][]", nil %>
             <% ["7:00 am", "8:00 am", "9:00 am", "10:00 am", "11:00 am", "12:00 am", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm"].in_groups_of(3) do |row_items| %>
               <tr>
                 <% for item in row_items %>
@@ -131,7 +128,6 @@
         </label>
         <div class="controls">
           <table class="table">
-            <%= hidden_field_tag "user[neighborhoods][]", nil %>
             <% ["Gold Coast", "Lakeview", "Lincoln Park", "Loop", "River North", "River West", "South Loop", "West Loop", "Wicker Park"].in_groups_of(3) do |row_items| %>
               <tr>
                 <% for item in row_items %>

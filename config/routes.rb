@@ -1,5 +1,5 @@
 Maven::Application.routes.draw do
-  
+
   devise_for :users, :controllers => { :registrations => :registrations }
 
   get 'learn_more' => 'home#learn_more', as: :learn_more

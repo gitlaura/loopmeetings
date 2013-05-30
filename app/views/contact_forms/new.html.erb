@@ -1,0 +1,30 @@
+<div class="dark center">
+  <div class="container">
+    <div class="row">
+      <h2 class="span12 bitter">Invite your friends and co-workers to Maven</h2>
+    </div>
+  </div>
+</div>
+<div class="container" style="padding-top: 50px;">
+  <div class="row">
+    <div class="span4 offset4">
+      <%= simple_form_for(@contact_form) do |f| %>
+          <div><h4>First, what's your email?</h4>
+            <%= f.email_field :your_email, :autofocus => true, class: "span4", placeholder: "Your Email Address" %></div>
+          <div><h4>Next, who do you want to invite?</h4></div>
+
+          <div><%= f.email_field :email1, :autofocus => true, class: "span4", placeholder: "Email Address 1" %></div>
+          <div><%= f.email_field :email2, :autofocus => true, class: "span4", placeholder: "Email Address 2" %></div>
+          <div><%= f.email_field :email3, :autofocus => true, class: "span4", placeholder: "Email Address 3" %></div>
+          <div><%= f.email_field :email4, :autofocus => true, class: "span4", placeholder: "Email Address 4" %></div>
+          <div><%= f.email_field :email5, :autofocus => true, class: "span4", placeholder: "Email Address 5" %></div>
+
+
+           <br>
+      <div class="center">
+        <%= f.submit "Send Invites" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

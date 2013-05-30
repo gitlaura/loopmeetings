@@ -10,27 +10,27 @@
 .light.center
 	.container
 		.row
-			%h2.span12.bitter So, how does this work?
+			%h2.span12.bitter How does it work?
 		.row#how-it-works
 			.span4.center
 				%div{style: "padding: 0 20px;"}
 					%h4.bitter Apply to Join
 					= image_tag "apply.png"
-					%p Connect with LinkedIn and tell us what you're interested in.
+					%p Connect through LinkedIn and tell us what type of introductions would help you most.
 			.span4.center
 				%div{style: "padding: 0 20px;"}
 					%h4.bitter Get Matched
 					= image_tag "matched.png"
-					%p We match you with professional who we think you'd enjoy meeting.
+					%p We’ll match you with two other professionals who we think you’d benefit from meeting.
 			.span4.center
 				%div{style: "padding: 0 20px;"}
 					%h4.bitter Meet New People
 					= image_tag "meet.png"
-					%p For $10, we set up a coffee or lunch meeting for you to have great conversation.
+					%p For just $10, we’ll set you up for coffee or lunch and great conversation.
 .dark.center
 	.container
 		.row
-			%h2.span12.bitter And make connections that could lead to...
+			%h2.span12.bitter You’ll make new connections that could lead to…
 		#make-connections
 			.row
 				.span4.center
@@ -38,14 +38,14 @@
 					%h4.bitter Exciting Opportunities
 				.span4.center
 					= image_tag "icon-industryknowledge.png"
-					%h4.bitter New Industry Knowledge
+					%h4.bitter New Industry Knowledge/Insights
 				.span4.center
 					= image_tag "icon-relevantcontacts.png"
 					%h4.bitter Relevant Contacts
 			.row{style: "margin-top: 20px;"}
 				.span4.center
 					= image_tag "icon-helpfulmentors.png"
-					%h4.bitter Helpful Mentors
+					%h4.bitter Inspiring Mentors
 				.span4.center
 					= image_tag "icon-valuablepartnerships.png"
 					%h4.bitter Valuable Partnerships
@@ -55,5 +55,8 @@
 .light.center
 	.container
 		.row
-			%h2.span12.bitter{style: "margin-bottom: 20px;"} Ready?
-			= link_to "Apply for membership", new_user_registration_path, class: "apply-button button-dark"
+			%h2.span12.bitter{style: "margin-bottom: 20px;"} Ready to join?
+			= link_to "GET MATCHED", new_user_registration_path, class: "apply-button button-dark"
+			%br
+			%br
+			= link_to "Or click here to learn more.", learn_more_path

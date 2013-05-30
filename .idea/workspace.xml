@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="adf796df-20d4-4a93-93fb-5e94704fa9b7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/contact_forms_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/contact_forms_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contact_forms/new.html.erb" afterPath="$PROJECT_DIR$/app/views/contact_forms/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="maven.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,10 +72,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="contact_forms_controller.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="contact_forms_controller.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/contact_forms_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+                <state line="10" column="17" selection-start="276" selection-end="276" vertical-scroll-proportion="0.24193548">
                   <folding />
                 </state>
               </provider>
@@ -122,10 +119,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="128" column="35" selection-start="5952" selection-end="5952" vertical-scroll-proportion="0.6236559">
+                <state line="128" column="35" selection-start="5952" selection-end="5952" vertical-scroll-proportion="-39.183674">
                   <folding />
                 </state>
               </provider>
@@ -204,9 +201,9 @@
         <option value="$PROJECT_DIR$/app/views/contact_forms/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/contact_forms/create.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contact_forms/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/contact_forms_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/contact_forms_controller.rb" />
       </list>
     </option>
   </component>
@@ -978,13 +975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/contact_forms_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="63" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
@@ -1001,7 +991,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="35" selection-start="5952" selection-end="5952" vertical-scroll-proportion="0.6236559">
+        <state line="128" column="35" selection-start="5952" selection-end="5952" vertical-scroll-proportion="-39.183674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/contact_forms_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="276" selection-end="276" vertical-scroll-proportion="0.24193548">
           <folding />
         </state>
       </provider>

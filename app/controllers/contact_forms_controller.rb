@@ -8,7 +8,7 @@ class ContactFormsController < ApplicationController
       @contact_form = ContactForm.new(params[:contact_form])
       @contact_form.request = request
       if @contact_form.deliver
-        redirect_to contact_forms_path
+        flash.now[:notice] = 'Thank you for inviting friends!'
       else
         render :new
       end

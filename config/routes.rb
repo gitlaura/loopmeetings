@@ -1,6 +1,6 @@
 Maven::Application.routes.draw do
 
-  resources :contact_forms, :only => [:new, :create], as: :invites
+  resources :contact_forms, :only => [:new, :create]
 
   devise_for :admins
   mount RailsAdmin::Engine => '/maven_admin', :as => 'rails_admin'

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adf796df-20d4-4a93-93fb-5e94704fa9b7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.haml" afterPath="$PROJECT_DIR$/app/views/home/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/learn_more.html.haml" afterPath="$PROJECT_DIR$/app/views/home/learn_more.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="maven.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,8 +23,8 @@
     <file path="/README.rdoc" changelist="adf796df-20d4-4a93-93fb-5e94704fa9b7" time="1369933559134" ignored="false" />
     <file path="/new.html.erb" changelist="adf796df-20d4-4a93-93fb-5e94704fa9b7" time="1369934495875" ignored="false" />
     <file path="/user.rb" changelist="adf796df-20d4-4a93-93fb-5e94704fa9b7" time="1369934522447" ignored="false" />
-    <file path="/index.html.haml" changelist="adf796df-20d4-4a93-93fb-5e94704fa9b7" time="1369948190779" ignored="false" />
-    <file path="/home.css.scss" changelist="adf796df-20d4-4a93-93fb-5e94704fa9b7" time="1369948417050" ignored="false" />
+    <file path="/index.html.haml" changelist="adf796df-20d4-4a93-93fb-5e94704fa9b7" time="1369949361970" ignored="false" />
+    <file path="/home.css.scss" changelist="adf796df-20d4-4a93-93fb-5e94704fa9b7" time="1369949440812" ignored="false" />
     <file path="/learn_more.html.haml" changelist="adf796df-20d4-4a93-93fb-5e94704fa9b7" time="1369949127894" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,25 +75,25 @@
       <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="15" selection-start="2028" selection-end="2028" vertical-scroll-proportion="-21.666666">
+            <state line="4" column="123" selection-start="213" selection-end="213" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="learn_more.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="learn_more.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/learn_more.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="310" selection-start="3954" selection-end="3954" vertical-scroll-proportion="0.7069272">
+            <state line="57" column="310" selection-start="3954" selection-end="3954" vertical-scroll-proportion="-35.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="89" selection-start="1929" selection-end="1929" vertical-scroll-proportion="-13.2">
+            <state line="43" column="22" selection-start="830" selection-end="830" vertical-scroll-proportion="0.8347826">
               <folding />
             </state>
           </provider>
@@ -166,9 +165,9 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/home/learn_more.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/learn_more.html.haml" />
       </list>
     </option>
   </component>
@@ -860,23 +859,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/learn_more.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="310" selection-start="3954" selection-end="3954" vertical-scroll-proportion="-35.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="15" selection-start="2028" selection-end="2028" vertical-scroll-proportion="-21.666666">
+        <state line="4" column="123" selection-start="213" selection-end="213" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="89" selection-start="1929" selection-end="1929" vertical-scroll-proportion="-13.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/learn_more.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="310" selection-start="3954" selection-end="3954" vertical-scroll-proportion="0.7069272">
+        <state line="43" column="22" selection-start="830" selection-end="830" vertical-scroll-proportion="0.8347826">
           <folding />
         </state>
       </provider>

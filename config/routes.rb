@@ -1,6 +1,6 @@
 Maven::Application.routes.draw do
 
-  resources :contact_forms, :only => [:new, :create]
+  resources :contact_forms, :only => [:new, :create], as: :invites
 
   devise_for :admins
   mount RailsAdmin::Engine => '/maven_admin', :as => 'rails_admin'
@@ -8,7 +8,6 @@ Maven::Application.routes.draw do
   devise_for :users, :controllers => { :registrations => :registrations }
 
   get 'learn_more' => 'home#learn_more', as: :learn_more
-  get 'invites' => 'home#invites', as: :invites
   root to: "home#index"
 
   # The priority is based upon order of creation:

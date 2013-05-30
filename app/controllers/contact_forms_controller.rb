@@ -5,10 +5,10 @@ class ContactFormsController < ApplicationController
 
   def create
     begin
-      @contact_form = ContactForm.new(params[:contact_forms])
+      @contact_form = ContactForm.new(params[:contact_form])
       @contact_form.request = request
       if @contact_form.deliver
-        flash.now[:notice] = 'Thank you for inviting friends!'
+        redirect_to contact_forms_path
       else
         render :new
       end

@@ -16,7 +16,7 @@
 		  <%= f.input :full_name, :autofocus => true, input_html: { value: (resource.full_name == " " ? "" : resource.full_name) } %>
 		  <%= f.input :email %>
 		  <%= f.input :phone %>
-			<%= f.input :birthday, as: :date, order: [:month, :day, :year], start_year: Date.today.year - 90, end_year: Date.today.year %>
+			<%= f.input :birthday, :label => "Date of Birth", as: :date, order: [:month, :day, :year], start_year: Date.today.year - 90, end_year: Date.today.year %>
 		  <%= f.input :password %>
 		  <%= f.input :password_confirmation %>
 		</fieldset>
@@ -24,13 +24,12 @@
 		<hr>
 
 	  <fieldset>
-	  	<legend>About Your Work</legend>
+	  	<legend>About You</legend>
 		  <%= f.input :linkedin, label: "LinkedIn Profile URL" %>
 		  <%= f.input :employer %>
 		  <%= f.input :job_title %>
 		  <%= f.input :job_description, as: :text, label: "What do you currently do for work?", input_html: { rows: 5 } %>
 		  <%= f.input :hobbies, as: :text, label: "What are three things you like to do outside of work?", input_html: { rows: 5 } %>
-		  <%= f.input :resume, label: "Please upload the most recent version of your resume. (optional)" %>
 	  </fieldset>
 
 		<hr>
@@ -65,29 +64,6 @@
       <%= f.input :match_preferences, as: :check_boxes, collection: ["Mentees (typically professionals who are more junior)", "Peers (typically professionals who are at a similar level)", "Mentors (typically professionals who are more senior)"], label: "What type of people are you interested in meeting through Maven?" %>
       <br>
 
-      <div class="control-group check_boxes required user_industry_interests">
-        <label class="check_boxes required control-label">
-          <abbr title="required">*</abbr> What industries are you interested in discussing?
-        </label>
-        <div class="controls">
-          <table class="table">
-            <% ['Agriculture', 'Accounting', 'Advertising', 'Aerospace', 'Apparel & Accessories', 'Automotive', 'Banking', 'Broadcasting', 'Business', 'Computer Science', 'Consumer Products', 'eCommerce', 'Education', 'Energy', 'Entertainment', 'Finance', 'Food & Beverage', 'Health Care', 'Information Technology', 'Legal', 'Management Consulting', 'Manufacturing', 'Music', 'Pharmaceuticals', 'Private Equity', 'Publishing', 'Real Estate', 'Retail & Wholesale', 'Software', 'Sports', 'Startups', 'Technology', 'Telecommunications', 'Travel', 'Venture Capital'].in_groups_of(5) do |row_items| %>
-              <tr>
-                <% for item in row_items %>
-                  <td>
-                    <% unless item.blank? %>
-                    <label class="checkbox">
-                      <%= check_box_tag "user[industry_interests][]", item, (resource.industry_interests.nil? ? false : resource.industry_interests.include?(item)) %>
-                      <%= item %>
-                    </label>
-                    <% end %>
-                  </td>
-                <% end %>
-              </tr>
-            <% end %>
-          </table>
-        </div>
-      </div>
 
       <%= f.input :why_interested, as: :text, input_html: { rows: 5 }, label: "In your own words, why do you want to join Maven? The more specific you are, the better we are able to match you." %>
 	  </fieldset>
@@ -100,7 +76,7 @@
 
       <div class="control-group check_boxes required user_times">
         <label class="check_boxes required control-label">
-          <abbr title="required">*</abbr> What times work best for you for a coffee meeting?
+          <abbr title="required">*</abbr> What times work best for you?
         </label>
         <div class="controls">
           <table class="table">
@@ -150,9 +126,9 @@
 	    
 	    <div class="control-group">
 	    	<div class="controls">
-	    		<%= f.submit "Sign up", class: "apply-button button-dark", style: "border-top: none; border-left: none; border-right: none;" %>
+	    		<%= f.submit "Apply", class: "apply-button button-dark", style: "border-top: none; border-left: none; border-right: none;" %>
 	    		<br><br>
-					<%= render "devise/shared/links" %>
+
 	    	</div>
 	    </div>
 

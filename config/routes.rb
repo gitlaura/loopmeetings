@@ -1,9 +1,8 @@
 Maven::Application.routes.draw do
 
+
   devise_for :admins
-
-  mount RailsAdmin::Engine => '/foo_admin', :as => 'rails_admin'
-
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   devise_for :users, :controllers => { :registrations => :registrations }
 
   get 'learn_more' => 'home#learn_more', as: :learn_more

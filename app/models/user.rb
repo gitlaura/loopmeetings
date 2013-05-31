@@ -3,14 +3,14 @@ class User
   include Mongoid::MultiParameterAttributes
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
-  # :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+  # :lockable, :timeoutable and :omniauthable, :recoverable, :rememberable, :trackable, :validatable, :database_authenticatable
+  devise :registerable, :rememberable
+
 
   ## Database authenticatable
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""
-  
+
   ## Recoverable
   field :reset_password_token,   :type => String
   field :reset_password_sent_at, :type => Time
@@ -49,7 +49,11 @@ class User
 
   field :questions
 
-  validates_presence_of :full_name, :email, :phone, :birthday, :linkedin, :employer, :job_title, :job_description, :hobbies, :networking_goals, :job_search_status, :match_preferences, :industry_interests, :why_interested, :coffee_or_lunch, :times, :neighborhoods
+  validates_presence_of :full_name, :email, :phone, :birthday, :linkedin,
+                        :employer, :job_title, :job_description, :hobbies,
+                        :networking_goals, :job_search_status, :match_preferences,
+                        :industry_interests, :why_interested, :coffee_or_lunch,
+                        :times, :neighborhoods, :name
 
   mount_uploader :resume, ResumeUploader
 
@@ -61,6 +65,10 @@ class User
     split = name.split(' ', 2)
     self.first_name = split.first
     self.last_name = split.last
+  end
+
+  def name
+    "#{first_name} #{last_name}"
   end
 
   ## Confirmable

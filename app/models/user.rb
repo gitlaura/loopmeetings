@@ -57,6 +57,12 @@ class User
 
   mount_uploader :resume, ResumeUploader
 
+  has_many :invitations
+
+  rails_admin do
+    configure :invitations, :has_many_association
+  end
+
   def full_name
     [first_name, last_name].join(' ')
   end
@@ -68,7 +74,7 @@ class User
   end
 
   def name
-    "#{first_name} #{last_name}"
+    email
   end
 
   ## Confirmable

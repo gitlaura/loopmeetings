@@ -1,0 +1,26 @@
+<div class="dark center">
+  <div class="container">
+    <div class="row">
+      <h2 class="span12 bitter">Invite your friends and co-workers to Maven</h2>
+    </div>
+  </div>
+</div>
+<div class="container" style="padding-top: 50px;">
+  <div class="row">
+    <div class="span4 offset4">
+      <%= form_tag(invitations_path) do %>
+          <div><h4>First, what's your email?</h4>
+            <%= email_field_tag :your_email, nil, class: "span4", placeholder: "Your Email Address" %></div>
+          <div><h4>Next, who do you want to invite?</h4></div>
+          <% 1.upto(5) do |i| %>
+            <div><%= email_field_tag 'invite_email[]', nil, class: "span4", placeholder: "Email Invitation" %></div>
+          <% end %>
+
+           <br>
+      <div class="center">
+        <%= submit_tag "Send Invites", class: "apply-button" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

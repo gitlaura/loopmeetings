@@ -1,9 +1,19 @@
+require 'sidekiq/web'
+
 Maven::Application.routes.draw do
 
+  constraint = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.instance_of?(Admin) }
+  constraints constraint do
+    mount Sidekiq::Web => '/admin/sidekiq'
+  end
 
   devise_for :admins
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   devise_for :users, :controllers => { :registrations => :registrations }
+
+
+
+  resources :invitations, :only => [:new, :create, :index]
 
   get 'learn_more' => 'home#learn_more', as: :learn_more
   root to: "home#index"

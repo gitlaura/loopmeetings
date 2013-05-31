@@ -7,10 +7,11 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'quiet_assets'
 end
 
 gem 'jquery-rails'
-gem 'mongoid', '~>3.0.4'
+gem 'mongoid', "~> 3.1.4"
 gem 'newrelic_rpm'
 gem 'haml'
 gem 'bootstrap-sass'
@@ -22,3 +23,7 @@ gem 'simple_form'
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem 'fog'
+
+gem "sidekiq", "~> 2.12.1"
+gem "sidekiq-status", "~> 0.3.0"
+gem "sidekiq-failures", "~> 0.1.0"

@@ -27,8 +27,8 @@ class InvitationWorker
               "track_clicks"=> true,
               "global_merge_vars"=> [
                   {
-                      "name"=> "merge1",
-                      "content"=> "merge1 content"
+                      "name"=> "sender",
+                      "content"=> inv.user.full_name
                   }
               ]
             }, async=false)

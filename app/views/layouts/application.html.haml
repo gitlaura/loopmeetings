@@ -19,3 +19,6 @@
       = yield
       #push
     = render 'home/footer'
+
+    - if Rails.env.development?
+      = render 'shared/debug'

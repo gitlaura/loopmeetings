@@ -38,8 +38,8 @@ class User
   field :resume_cache
 
   field :networking_goals
-  field :job_search_status
-  field :match_preferences
+  # field :job_search_status
+  # field :match_preferences
   field :industry_interests
   field :why_interested
 
@@ -49,18 +49,29 @@ class User
 
   field :questions
 
+  field :marketing_campaign,        :type => Moped::BSON::ObjectId
+
   validates_presence_of :full_name, :email, :phone, :birthday, :linkedin,
                         :employer, :job_title, :job_description, :hobbies,
-                        :networking_goals, :job_search_status, :match_preferences,
-                        :industry_interests, :why_interested, :coffee_or_lunch,
+                        :networking_goals, :why_interested, :coffee_or_lunch,
                         :times, :neighborhoods, :name
 
   mount_uploader :resume, ResumeUploader
+
+  # attr_accessible :full_name
 
   has_many :invitations
 
   rails_admin do
     configure :invitations, :has_many_association
+    show do
+      configure :marketing_campaign do
+        formatted_value do
+          mc = MarketingCampaign.find(bindings[:object].marketing_campaign)
+          bindings[:view].link_to mc.name, controller: "rails_admin/main", action: "show", model_name:'MarketingCampaign', id: mc.id
+        end
+      end
+    end
   end
 
   def full_name
@@ -75,6 +86,11 @@ class User
 
   def name
     email
+  end
+
+  def apply_marketing_campaign(marketing_campaign_id)
+    self.marketing_campaign = marketing_campaign_id
+    self.save
   end
 
   ## Confirmable

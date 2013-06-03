@@ -27,3 +27,8 @@ gem 'fog'
 gem "sidekiq", "~> 2.12.1"
 gem "sidekiq-status", "~> 0.3.0"
 gem "sidekiq-failures", "~> 0.1.0"
+
+gem "mandrill-api", "~> 1.0.31"
+
+gem "json", "~> 1.7.7"
+gem "excon", "0.16.0"

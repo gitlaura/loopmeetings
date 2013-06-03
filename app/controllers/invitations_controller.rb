@@ -5,9 +5,10 @@ class InvitationsController < ApplicationController
 
   def create
 
-    unless params[:your_email].nil?
+    unless params[:your_name].nil?
 
-      user = User.find_or_initialize_by(email: params[:your_email])
+      name_array = params[:your_name].split
+      user = User.find_or_initialize_by(first_name: name_array[0] , last_name: name_array[1] )
       user.save(validate: false)
 
       unless params[:invite_email].nil?

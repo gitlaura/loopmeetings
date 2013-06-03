@@ -17,7 +17,7 @@
 		  <%= f.input :email %>
 		  <%= f.input :phone %>
 
-			<%= f.input :birthday, :label => "Date of Birth", as: :date, order: [:month, :day, :year], start_year: Date.today.year - 90, end_year: Date.today.year %>
+			<%= f.input :birthday, :label => "Date of Birth", as: :date, order: [:month, :day, :year], start_year: Date.today.year - 90, end_year: Date.today.year, input_html: {class: 'span1' } %>
 		  <%#= f.input :password %>
 		  <%#= f.input :password_confirmation %>
 
@@ -30,7 +30,7 @@
 		  <%= f.input :linkedin, label: "LinkedIn Profile URL" %>
 		  <%= f.input :employer %>
 		  <%= f.input :job_title %>
-		  <%= f.input :job_description, as: :text, label: "What do you currently do for work?", input_html: { rows: 5 } %>
+		  <%= f.input :job_description, as: :text, label: "Job Description", input_html: { rows: 5 } %>
 		  <%= f.input :hobbies, as: :text, label: "What are three things you like to do outside of work?", input_html: { rows: 5 } %>
 	  </fieldset>
 
@@ -61,9 +61,9 @@
           </table>
         </div>
       </div>
-      <%= f.input :job_search_status, as: :radio_buttons, collection: ["Yes – actively searching", "Yes - it's not urgent", "Maybe - I'm open to new opportunities", "No - not right now", "No - I love my job"], label: "Are you looking for a new job?" %>
-      <br>
-      <%= f.input :match_preferences, as: :check_boxes, collection: ["Mentees (typically professionals who are more junior)", "Peers (typically professionals who are at a similar level)", "Mentors (typically professionals who are more senior)"], label: "What type of people are you interested in meeting through Maven?" %>
+      <%#= f.input :job_search_status, as: :radio_buttons, collection: ["Yes – actively searching", "Yes - it's not urgent", "Maybe - I'm open to new opportunities", "No - not right now", "No - I love my job"], label: "Are you looking for a new job?" %>
+
+      <%#= f.input :match_preferences, as: :check_boxes, collection: ["Mentees (typically professionals who are more junior)", "Peers (typically professionals who are at a similar level)", "Mentors (typically professionals who are more senior)"], label: "What type of people are you interested in meeting through Maven?" %>
       <br>
 
 
@@ -124,17 +124,15 @@
         </div>
       </div>
 
-		  <%= f.input :questions, as: :text, input_html: { rows: 5 }, label: "Any questions or concerns?" %>
+		  <%= f.input :questions, as: :text, input_html: { rows: 5 }, label: "Anything else you'd like to tell us?" %>
 
 	    <div class="control-group">
 	    	<div class="controls">
 	    		<%= f.submit "Apply", class: "apply-button button-dark", style: "border-top: none; border-left: none; border-right: none;" %>
 	    		<br><br>
-<<<<<<< HEAD
-					<%#= render "devise/shared/links" %>
-=======
 
->>>>>>> 60eb52bda6f3a8602b38df93860f347875f65d54
+					<%#= render "devise/shared/links" %>
+
 	    	</div>
 	    </div>
 

@@ -1,0 +1,7 @@
+.container
+  .hero-unit.white{style: 'height:260px; margin-top:20px;'}
+    %ul
+      - session.each do |var|
+        %li
+          = var.inspect
+

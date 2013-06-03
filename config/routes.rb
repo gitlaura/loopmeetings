@@ -16,6 +16,10 @@ Maven::Application.routes.draw do
   resources :invitations, :only => [:new, :create, :index]
 
   get 'learn_more' => 'home#learn_more', as: :learn_more
+
+  get '/r/:marketing_campaign_slug' => 'home#marketing', :as => :marketing_campaign
+  get '/r' => redirect('/')
+
   root to: "home#index"
 
   # The priority is based upon order of creation:

@@ -15,7 +15,7 @@
               <%= hidden_field_tag :your_name, current_user.full_name %></div>
             <% else %>
               <h4>First, what's your name?</h4>
-              <%= email_field_tag :your_name, nil, class: "span4", placeholder: "Your Name" %></div>
+              <%= text_field_tag :your_name, nil, class: "span4", placeholder: "Your Name" %></div>
             <% end %>
           <div><h4>Who do you want to invite?</h4></div>
           <% 1.upto(5) do |i| %>

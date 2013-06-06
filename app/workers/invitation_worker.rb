@@ -27,7 +27,7 @@ class InvitationWorker
             "global_merge_vars"=> [
                 {
                     "name"=> "sender",
-                    "content"=> inv.user.full_name
+                    "content"=> inv.user.full_name_caps
                 }
             ]
           }, async=false)

@@ -75,6 +75,10 @@ class User
   end
 
   def full_name
+    [first_name, last_name].join(' ')
+  end
+
+  def full_name_caps
     [first_name.capitalize, last_name.capitalize].join(' ')
   end
 

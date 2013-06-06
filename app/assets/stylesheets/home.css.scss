@@ -34,13 +34,13 @@
 	border-bottom: 1px solid #081718;
 	border-top: 1px solid #081718;
 	h1 {
-		font-size: 45px;
+		font-size: 37px;
 		font-weight: 200;
 		margin-bottom: 30px;
 	}
     h4 {
       margin-top: -20px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       font-size: 22px;
     }
 }
@@ -60,8 +60,8 @@
 		text-decoration: none;
 	}
 	&.button-dark {
-		background: #68C0D5;
-		color: #fff;
+		background: #fbfbfb;
+		color: #414042;
 		border-bottom: 5px solid #133638;
 	}
 }
@@ -69,7 +69,10 @@
 #hero-photo {
 	height: 500px;
 	background-image: url(hero-photo.jpg);
-	background-position: 0px -130px;
+	background-position: 120px -350px;
+	img{
+		top: -171px !important;
+	}
 }
 
 #how-it-works {
@@ -81,7 +84,7 @@
 	}
 	p {
 		font-size: 17px;
-		color: #707173;
+		color: #414042;
 		line-height: 1.5;
 	}
 }
@@ -97,7 +100,7 @@
 }
 .teal {
 	background: #42C2D7;
-	color: #fff;
+	color: #fbfbfb;
 	padding: 15px 0 30px 0;
 	.apply-button {
 		border-bottom: 5px solid #002A31;
@@ -108,8 +111,19 @@
 	background: #fbfbfb;
 	color: #636466;
 }
+
+.blue {
+	background: #68c0d5;
+	color: #fbfbfb;
+	padding: 30px 0;
+	a {
+		color: #414042;
+	}
+}
+
+
 .dark {
-	background: #FF492C;
+	background: #f45f46;
 	color: #fff;
 	border-bottom: 1px solid #B8282F;
 	border-top: 1px solid #B8282F;

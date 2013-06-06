@@ -57,9 +57,18 @@
 				%h1.bitter{style: "color: #003939; margin-bottom: 20px; margin-top: 30px;"} I'm looking for a job. Is Maven for me?
 				%p We understand that one of the primary goals of networking is to find new job opportunities, but we encourage members to be discreet. We want Maven to be an enjoyable, low-pressure experience for everyone, so please wait until after your meeting to reach out about transitional opportunities.
 
+		.row
+			.span12
+				%h1.bitter{style: "color: #003939; margin-bottom: 20px; margin-top: 30px;"} What if I have still have questions?
+				%p
+					We'd love to hear from you. Email us at
+					= mail_to "hello@mavenmeetings.com"
+					if you have any questions, suggestions, or just want to say hi.
+
+
 
 .teal.center
 	.container
 		.row
 			%h2.span12.bitter{style: "margin-bottom: 20px;"} Ready?
-			= link_to "Apply for membership", new_user_registration_path, class: "apply-button"
+			= link_to "Get Started", new_user_registration_path, class: "apply-button"

@@ -30,11 +30,15 @@ class MarketingCampaign
       end
     end
     list do
+      field :name
+      field :visits
       configure :slug do
         formatted_value do
           'http://www.mavenmeetings.com/r/'+ bindings[:object].slug
         end
       end
+      field :slug
+      field :active
     end
     show do
       field :slug

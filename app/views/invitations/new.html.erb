@@ -12,11 +12,13 @@
           <div>
             <% if user_signed_in? %>
               <h3>Hey <%= current_user.full_name %>,</h3>
-              <%= hidden_field_tag :your_name, current_user.full_name %></div>
+              <%= hidden_field_tag :your_name, current_user.full_name %>
             <% else %>
-              <h4>First, what's your name?</h4>
-              <%= text_field_tag :your_name, nil, class: "span4", placeholder: "Your Name" %></div>
+              <h4>First, what's your name and email?</h4>
+              <%= text_field_tag :your_name, nil, class: "span4", placeholder: "Your Full Name" %><br/>
+              <%= email_field_tag :your_email, nil, class: "span4", placeholder: "Your Email" %>
             <% end %>
+          </div>
           <div><h4>Who do you want to invite?</h4></div>
           <% 1.upto(5) do |i| %>
             <div><%= email_field_tag 'invite_email[]', nil, class: "span4", placeholder: "Email Invitation" %></div>

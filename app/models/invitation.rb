@@ -12,6 +12,10 @@ class Invitation
   rails_admin do
     configure :user, :belongs_to_association
   end
+
+  def name
+    email
+  end
 end
 
 

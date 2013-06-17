@@ -72,6 +72,12 @@ class User
         end
       end
     end
+    list do
+      field :email
+      field :full_name_caps
+      field :id
+
+    end
   end
 
   def full_name
@@ -79,7 +85,11 @@ class User
   end
 
   def full_name_caps
-    [first_name.capitalize, last_name.capitalize].join(' ')
+    f_name = ""
+    l_name = ""
+    f_name = first_name.capitalize unless first_name.nil?
+    l_name = last_name.capitalize unless last_name.nil?
+    "#{f_name} #{l_name}"
   end
 
   def full_name=(name)

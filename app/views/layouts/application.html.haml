@@ -1,6 +1,8 @@
 !!!
 %html
   %head
+    - if Rails.env.production?
+      %script{src: "//cdn.optimizely.com/js/255380011.js"}
     %title Maven
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     = stylesheet_link_tag    "application", :media => "all"

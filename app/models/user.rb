@@ -51,6 +51,8 @@ class User
 
   field :marketing_campaign,        :type => Moped::BSON::ObjectId
 
+  field :referral
+
   validates_presence_of :email, :phone, :name
 
   # validates_presence_of :full_name, :email, :phone, :birthday, :linkedin,

@@ -22,20 +22,23 @@
 		  <%#= f.input :password %>
 		  <%#= f.input :password_confirmation %>
 
+      <%= f.input :linkedin, label: "LinkedIn Profile URL" %>
+      <%= f.input :hobbies, as: :text, label: "What are three things you like to do outside of work?", input_html: { rows: 5 } %>
+
 		</fieldset>
 
 		<hr>
 
-	  <fieldset>
+<!-- 	  <fieldset>
 	  	<legend>About You</legend>
-		  <%= f.input :linkedin, label: "LinkedIn Profile URL" %>
-		  <%= f.input :employer %>
-		  <%= f.input :job_title %>
-		  <%= f.input :job_description, as: :text, label: "Job Description", input_html: { rows: 5 } %>
-		  <%= f.input :hobbies, as: :text, label: "What are three things you like to do outside of work?", input_html: { rows: 5 } %>
+
+		  <%#= f.input :employer %>
+		  <%#= f.input :job_title %>
+		  <%#= f.input :job_description, as: :text, label: "Job Description", input_html: { rows: 5 } %>
+
 	  </fieldset>
 
-		<hr>
+		<hr> -->
 
 	  <fieldset>
 	  	<legend>Networking Goals</legend>
@@ -75,7 +78,7 @@
 
 	  <fieldset>
 	  	<legend>Availability</legend>
-	  	<%= f.input :coffee_or_lunch, as: :radio_buttons, collection: ["Coffee", "Lunch", "I don't care"], label: "Do you prefer coffee or lunch meetings?" %>
+	  	<%#= f.input :coffee_or_lunch, as: :radio_buttons, collection: ["Coffee", "Lunch", "I don't care"], label: "Do you prefer coffee or lunch meetings?" %>
 
       <div class="control-group check_boxes required user_times">
         <label class="check_boxes required control-label">

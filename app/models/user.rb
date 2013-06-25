@@ -53,12 +53,10 @@ class User
 
   field :referral
 
-  validates_presence_of :email, :phone, :name
 
-  # validates_presence_of :full_name, :email, :phone, :birthday, :linkedin,
-  #                       :employer, :job_title, :job_description, :hobbies,
-  #                       :networking_goals, :why_interested, :coffee_or_lunch,
-  #                       :times, :neighborhoods, :name
+  validates_presence_of :full_name, :email, :phone, :birthday, :linkedin,
+                        :hobbies, :networking_goals, :why_interested,
+                        :times, :neighborhoods, :name
 
   mount_uploader :resume, ResumeUploader
 

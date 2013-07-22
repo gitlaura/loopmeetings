@@ -45,6 +45,10 @@
     }
 }
 
+.headline {
+  font-size: 48px;
+}
+
 .apply-button {
 	text-transform: uppercase;
 	color: #133638;
@@ -129,6 +133,14 @@
 	border-top: 1px solid #B8282F;
 }
 
+.green {
+  background: #103636;
+  color: #fff;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  padding: 30px 0;
+}
+
 a { color: #35ADBF; }
 
 legend {
@@ -145,4 +157,74 @@ label, legend {
 	li {
 		line-height: 26px;
 	}
+}
+
+#testimonials {
+  background: #e0e4e5;
+
+  .span2 {
+    width: 150px;
+    margin-left: 10px;
+  }
+
+  .span3 {
+    width: 240px;
+    margin-left: 0px;
+  }
+
+  .testimonial {
+    padding-top: 28px;
+  }
+}
+
+#expand {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+#pricing {
+  padding-bottom: 40px;
+
+  #pricing_table {
+
+    margin: 0 auto;
+    table-layout: fixed;
+    width: auto;
+    border: none;
+    border-collapse: collapse;
+    color: #ffffff;
+    text-align: center;
+
+    .meeting-number {
+      font-size: 36px;
+    }
+
+    .dollar-number {
+      font-size: 42px;
+    }
+
+    th {
+      font-family: 'Bitter', serif;
+      font-weight: 100;
+      font-size: 18px;
+      padding: 24px 10px;
+      border: none;
+      text-align: center;
+    }
+
+    td {
+      padding: 20px 10px;
+      border: none;
+      text-align: center;
+    }
+
+    .black-cell {
+      color: #000000;
+    }
+
+    .right {
+      text-align: right;
+    }
+  }
 }

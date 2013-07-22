@@ -22,6 +22,8 @@ Maven::Application.routes.draw do
 
   root to: "home#index"
 
+  match 'landing_page' => 'home#landing_page'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

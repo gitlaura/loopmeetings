@@ -1,0 +1,177 @@
+.green.center
+  .container
+    .row
+      %h1.bitter.headline It's Like Networking, But Better.
+      %p{ :style => "font-size: 18px; margin-bottom: 28px;" }
+        Maven helps you meet great people through coffee setups and small groups events.
+      = link_to "Get Started", "javascript:void(0);", :class => "apply-button"
+#testimonials
+  .container
+    .row
+      .span2
+        = image_tag "testimonial-natalie.png"
+      .span3.testimonial
+        %div{ :style => "padding: 0 12px;" }
+          %p "I hate akward networking events. Maven meetings and events are a much better way to meet people"
+          %span{ :style => "font-weight: bold;" }
+            \- Natalie, Finance
+      .span2
+        = image_tag "testimonial-tom.png"
+      .span3.testimonial
+        %div{ :style => "padding: 0 12px;" }
+          %p "I met one of my best employees through Maven. They make it so easy to get to know new people."
+          %span{ :style => "font-weight: bold;" }
+            \- Tom, Entrepreneur
+      .span2
+        = image_tag "testimonial-sara.png"
+      .span3.testimonial
+        %div{ :style => "padding: 0 12px;" }
+          %p "Maven helped me expand my network quickly in a new city. It's like meeting friends of friends."
+          %span{ :style => "font-weight: bold;" }
+            \- Sara, Marketing & PR
+
+#expand.center
+  .container
+    .row{ :style => "padding: 20px 0 16px 0;"}
+      %h1.bitter Three Ways to Expand Your Network
+    .row{ :style => "padding-bottom: 30px;"}
+      .span4
+        %h3.bitter{ :style => "padding: 0 30px;" } Maven Coffee Meetings
+        %p{ :style => "margin: 0 40px;" }
+          %strong 1. Tell Us Your Goals
+          %br
+          Connect through LinkedIn and tell us what type of introductions would help you most.
+          %br
+          %br
+          %strong 2. Get Matched
+          %br
+          We'll match you with two professionals we think you'd benefit from meeting.
+          %br
+          %br
+          %strong 3. Meet New People
+          %br
+          We'll set your group up for coffee whenever and wherever it's convenient.
+      .span4
+        %h3.bitter Exclusive Small Group Events
+        = image_tag "exclusive-small-group-events.png"
+      .span4
+        %h3.bitter One-On-One Meeting Requests
+        = image_tag "one-on-one-meeting-requests.png"
+
+.dark.center
+  .container
+    .row
+      .span4
+        = image_tag "open-doors.png"
+        %h3 Open Doors
+      .span4
+        = image_tag "grow-your-business.png"
+        %h3 Grow Your Business
+      .span4
+        = image_tag "meet-new-people.png"
+        %h3 Meet New People
+
+#pricing.center
+  .container
+    .row{ :style => "padding: 20px 0 16px 0;"}
+      %h1.bitter Give it a shot! Sign Up for a Free Trial.
+    .row
+      %table.table.table-bordered#pricing_table
+        %thead
+          %tr
+            %th{ :style => "background: #52898c; width: 150px;" } What's Included?
+            %th.black-cell{ :style => "background: #d6eef0; width: 120px;" } Free
+            %th{ :style => "background: #92b5b7; width: 120px;"} Bronze
+            %th{ :style => "background: #709ea0; width: 120px;"} Silver
+            %th{ :style => "background: #52898c; width: 120px;"} Gold
+        %tbody
+          %tr
+            %td.right{ :style => "background: #427c7e; text-align: right"} Maven Meetings
+            %td.black-cell{ :style => "background: #cae2e4;"}
+              %span.meeting-number 1
+              Free Meeting
+            %td{ :style => "background: #84a7a9;"}
+              Up to
+              %span.meeting-number 4
+              \/year
+            %td{ :style => "background: #629293;"}
+              Up to
+              %span.meeting-number 6
+              \/year
+            %td{ :style => "background: #427c7e;"}
+              Up to
+              %span.meeting-number 12
+              \/year
+          %tr
+            %td.right{ :style => "background: #52898c;"} Tools to keep track of your Maven contacts
+            %td.black-cell{ :style => "background: #d6eef0;"}
+            %td{ :style => "background: #92b5b7;"}
+            %td{ :style => "background: #709ea0;"}
+            %td{ :style => "background: #52898c;"}
+          %tr
+            %td.right{ :style => "background: #427c7e;"} Access to exclusive events
+            %td.black-cell{ :style => "background: #cae2e4;"}
+            %td{ :style => "background: #84a7a9;"}
+            %td{ :style => "background: #629293;"}
+            %td{ :style => "background: #427c7e;"}
+          %tr
+            %td.right{ :style => "background: #52898c;"} Priority access to exclusive events
+            %td.black-cell{ :style => "background: #d6eef0;"}
+            %td{ :style => "background: #92b5b7;"}
+            %td{ :style => "background: #709ea0;"}
+            %td{ :style => "background: #52898c;"}
+          %tr
+            %td.right{ :style => "background: #427c7e;"} Access to job board
+            %td.black-cell{ :style => "background: #cae2e4;"}
+            %td{ :style => "background: #84a7a9;"}
+            %td{ :style => "background: #629293;"}
+            %td{ :style => "background: #427c7e;"}
+          %tr
+            %td.right{ :style => "background: #52898c;"} One-on-one meeting requests
+            %td.black-cell{ :style => "background: #d6eef0;"}
+            %td{ :style => "background: #92b5b7;"}
+            %td{ :style => "background: #709ea0;"}
+            %td{ :style => "background: #52898c;"}
+          %tr
+            %td{ :style => "background: #427c7e;"}
+            %td.black-cell{ :style => "background: #cae2e4;"}
+              TRY A MAVEN
+              %br
+              MEETING TODAY
+              %br
+              = link_to "SIGN UP", "javascript:void(0);", :class => "apply-button"
+              %br
+              FREE!
+            %td{ :style => "background: #84a7a9;"}
+              $
+              %span.dollar-number 8
+              \/mo.
+              %br
+              = link_to "SIGN UP", "javascript:void(0);", :class => "apply-button"
+              %br
+              30 Day Free Trial
+            %td{ :style => "background: #629293;"}
+              $
+              %span.dollar-number 15
+              \/mo.
+              %br
+              = link_to "SIGN UP", "javascript:void(0);", :class => "apply-button"
+              %br
+              30 Day Free Trial
+            %td{ :style => "background: #427c7e;"}
+              $
+              %span.dollar-number 50
+              \/mo.
+              %br
+              = link_to "SIGN UP", "javascript:void(0);", :class => "apply-button"
+              %br
+              30 Day Free Trial
+.blue.center
+  .container
+    .row
+      %h2.span12.bitter{ :style => "margin-bottom: 20px;"} Not Convinced?
+      %br
+      %br
+      = link_to "Click here to learn more.", learn_more_path
+
+

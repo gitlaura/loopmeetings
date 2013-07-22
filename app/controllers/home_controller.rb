@@ -10,4 +10,7 @@ class HomeController < ApplicationController
   def marketing
     redirect_to root_path
   end
+
+  def landing_page
+  end
 end

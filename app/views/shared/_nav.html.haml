@@ -8,10 +8,15 @@
         %span.icon-bar
       .nav-collapse.collapse
         %ul.nav.pull-right
-          - if params[:controller] == "home" && params[:action] == "index"
-            %li= link_to "HOW IT WORKS", "#howitworks", class: "scroll"
+          - if params[:controller] == "home" && params[:action] == "landing_page"
+            %li= link_to "LEARN MORE", "#expand", :class => "scroll"
+            %li= link_to "PRICING", "#pricing", :class => "scroll"
+            %li= link_to "APPLY", "#pricing", :class => "scroll"
           - else
-            %li= link_to "HOW IT WORKS", root_url+"#howitworks"
-          %li= link_to "LEARN MORE", learn_more_path
-          %li= link_to "APPLY", new_user_registration_path
+            - if params[:controller] == "home" && params[:action] == "index"
+              %li= link_to "HOW IT WORKS", "#howitworks", class: "scroll"
+            - else
+              %li= link_to "HOW IT WORKS", root_url+"#howitworks"
+            %li= link_to "LEARN MORE", learn_more_path
+            %li= link_to "APPLY", new_user_registration_path
 

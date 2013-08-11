@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adf796df-20d4-4a93-93fb-5e94704fa9b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/maven.iml" afterPath="$PROJECT_DIR$/.idea/maven.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="adf796df-20d4-4a93-93fb-5e94704fa9b7" name="Default" comment="" />
     <ignored path="maven.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="adf796df-20d4-4a93-93fb-5e94704fa9b7" time="1376075442912" ignored="false" />

@@ -1,7 +1,7 @@
 .navbar.no-margin
   .navbar-inner
     .container
-      = link_to image_tag('maven-logo-web.png', style: "height: 42px;"), root_url, class: 'brand'
+      = link_to image_tag('loop-header-logo.png', style: "height: 55px;"), root_url, class: 'brand'
       %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
         %span.icon-bar
         %span.icon-bar
@@ -17,6 +17,7 @@
               %li= link_to "HOW IT WORKS", "#howitworks", class: "scroll"
             - else
               %li= link_to "HOW IT WORKS", root_url+"#howitworks"
-            %li= link_to "LEARN MORE", learn_more_path
+            %li= link_to "FAQS", learn_more_path
+            %li= link_to "BLOG", href="http://blog.loopmeetings.com"
             %li= link_to "APPLY", new_user_registration_path
 

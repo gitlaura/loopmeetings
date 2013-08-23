@@ -34,14 +34,15 @@
 	border-bottom: 1px solid #081718;
 	border-top: 1px solid #081718;
 	h1 {
-		font-size: 37px;
+		font-size: 60px;
 		font-weight: 200;
 		margin-bottom: 30px;
 	}
     h4 {
-      margin-top: -20px;
+      margin-top: -10px;
       margin-bottom: 30px;
-      font-size: 22px;
+      font-size: 28.5px;
+      font-weight: normal;
     }
 }
 
@@ -100,7 +101,7 @@
 	}
 }
 .light, .dark {
-	padding: 30px 0;
+	padding: 10px 0;
 }
 .teal {
 	background: #42C2D7;
@@ -160,20 +161,31 @@ label, legend {
 }
 
 #testimonials {
-  background: #e0e4e5;
+  background: #68c0d5;
 
   .span2 {
     width: 150px;
     margin-left: 10px;
-  }
+    padding-top: 20px;
+      }
 
   .span3 {
     width: 240px;
     margin-left: 0px;
+    font-size: 17px;
+  }
+
+  .span4 {
+    width: 240px;
+    margin-left: 0px;
+    font-size: 17px;
+    font-weight: Bold;
+    font-color: 333132;
   }
 
   .testimonial {
-    padding-top: 28px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 

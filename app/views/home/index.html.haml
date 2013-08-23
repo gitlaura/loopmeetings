@@ -1,16 +1,40 @@
 #hero
 	.container
 		.row
-			%h1.span12.bitter Get matched with interesting professionals for coffee or lunch.
-			%h4.span12.bitter Looking to expand your professional network? Let Maven make the introductions.
+			%h1.span12.bitter It's Like Networking, But Better.
+			%h4.span12 Loop sets up a coffee meeting for you and two people you should meet.
 			= link_to "Get Started", new_user_registration_path, class: "apply-button"
 			.clearfix
-#hero-photo
+
+#testimonials
+
+	.container
+		.row
+			.span2
+				= image_tag "testimonial-natalie.png"
+			.span3.testimonial
+				%div{ :style => "padding: 0 13px;" }
+				%p Awkward networking events are awful. Loop meetings are a much better way to meet people. 
+				%span4.bitter{ :style => "font-weight: bold;" } - Natalie, Finance
+			.span2
+				= image_tag "testimonial-tom.png"
+			.span3.testimonial
+				%div{ :style => "padding: 0 12px;" }
+				%p You know never know who you'll meet! I ended up finding one of my best team members through Loop.
+				%span4.bitter{ :style => "font-weight: bold;" } - Tom, Entrepreneur
+			.span2
+				= image_tag "testimonial-sara.png"
+			.span3.testimonial
+				%div{ :style => "padding: 0 12px;" }
+				%p Loop is helping me expand my network quickly in a new city. It's really like meeting friends of friends.  
+				%span4.bitter{ :style => "font-weight: bold;" } - Sara, Marketing & PR
+
 %a#howitworks{name: "howitworks"}
 .light.center
 	.container
 		.row
-			%h2.span12.bitter How Does It Work?
+			%br
+			%h2.span12.bitter{style: "font-size: 45px;"} How It Works
 		.row#how-it-works
 			.span4.center
 				%div{style: "padding: 0 20px;"}
@@ -26,7 +50,7 @@
 				%div{style: "padding: 0 20px;"}
 					%h4.bitter Meet New People
 					= image_tag "meet.png"
-					%p We’ll set your group up for coffee or lunch whenever and wherever its convenient for all of you.
+					%p We’ll set your group up for coffee whenever and wherever its convenient for all of you.
 .dark.center
 	.container
 		.row

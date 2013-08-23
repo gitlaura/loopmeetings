@@ -2,14 +2,15 @@
   .container
     .row.uppercase
       .span4
-        %p= raw("&copy; Copyright Maven ") + Time.zone.now.year.to_s
+        %p= raw("&copy; Copyright Loop ") + Time.zone.now.year.to_s
       .span4.center
-        %p= image_tag "footer-logo.png"
+        %p= image_tag "loop-footer-logo.png"
       .span4{style: "text-align: right;"}
         %p
           - if params[:controller] == "home" && params[:action] == "index"
             = link_to "HOW IT WORKS", "#howitworks", class: "scroll"
           - else
             = link_to "HOW IT WORKS", root_url+"#howitworks"
-          = link_to "Learn More", learn_more_path
+          = link_to "FAQS", learn_more_path
+          = link_to "BLOG", href="http://blog.loopmeetings.com"
           = link_to "Apply", new_user_registration_path

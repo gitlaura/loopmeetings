@@ -13,11 +13,9 @@
             %li= link_to "PRICING", "#pricing", :class => "scroll"
             %li= link_to "APPLY", "#pricing", :class => "scroll"
           - else
-            - if params[:controller] == "home" && params[:action] == "index"
-              %li= link_to "HOW IT WORKS", "#howitworks", class: "scroll"
-            - else
-              %li= link_to "HOW IT WORKS", root_url+"#howitworks"
-            %li= link_to "FAQS", learn_more_path
-            %li= link_to "BLOG", href="http://blog.loopmeetings.com"
-            %li= link_to "APPLY", new_user_registration_path
+            %li= link_to "PEOPLE", href="http://people.loopmeetings.com"
+            %li= link_to "MEETINGS", meetings_path
+            %li= link_to "EVENTS", events_path
+            %li= link_to "MEMBERSHIP", membership_path
+            %li= link_to "APPLY", apply_path
 

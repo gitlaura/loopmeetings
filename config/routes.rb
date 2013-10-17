@@ -15,7 +15,22 @@ Maven::Application.routes.draw do
 
   resources :invitations, :only => [:new, :create, :index]
 
-  get 'learn_more' => 'home#learn_more', as: :learn_more
+  get 'faqs' => 'home#faqs', as: :faqs
+  get 'meetings' => 'home#meetings', as: :meetings
+  get 'apply' => 'home#apply', as: :apply
+  get 'manifesto' => 'home#manifesto', as: :manifesto
+  get 'membership' => 'home#membership', as: :membership
+  get 'about' => 'home#about', as: :about
+  get 'meetings_10_9' => 'home#meetings_10_9', as: :meetings_10_9
+  get 'events' => 'home#events', as: :events
+  get 'membersonly' => 'home#membersonly', as: :membersonly
+  get 'meetingone' => 'home#meetingone', as: :meetingone
+  get 'meetingtwo' => 'home#meetingtwo', as: :meetingtwo
+  get 'meetingthree' => 'home#meetingthree', as: :meetingthree
+  get 'meetingfour' => 'home#meetingfour', as: :meetingfour
+  get 'upgrade' => 'home#upgrade', as: :upgrade
+  get 'update' => 'home#update', as: :update
+  get 'bios' => 'home#bios', as: :bios
 
   get '/r/:marketing_campaign_slug' => 'home#marketing', :as => :marketing_campaign
   get '/r' => redirect('/')

@@ -1,0 +1,87 @@
+#hero
+	.container
+		.row
+			%h1.span12.bitter It's Like Networking, But Better.
+			%h4.span12 Loop sets up a coffee meeting for you and two people you should meet.
+			= link_to "Get Started", new_user_registration_path, class: "apply-button"
+			.clearfix
+
+#testimonials
+
+	.container
+		.row
+			.span2
+				= image_tag "testimonial-natalie.png"
+			.span3.testimonial
+				%div{ :style => "padding: 0 13px;" }
+				%p Awkward networking events are the worst. Loop meetings are a much better way to meet people. 
+				%span4.bitter{ :style => "font-weight: bold;" } - Natalie, Finance
+			.span2
+				= image_tag "testimonial-tom.png"
+			.span3.testimonial
+				%div{ :style => "padding: 0 12px;" }
+				%p Loop meetings have been invaluable. I've learned a lot and ended up meeting one of my best team members.
+				%span4.bitter{ :style => "font-weight: bold;" } - Tom, Entrepreneur
+			.span2
+				= image_tag "testimonial-sara.png"
+			.span3.testimonial
+				%div{ :style => "padding: 0 12px;" }
+				%p Loop is helping me expand my network quickly in a new city. It's really like meeting friends of friends.  
+				%span4.bitter{ :style => "font-weight: bold;" } - Sara, Marketing & PR
+
+%a#howitworks{name: "howitworks"}
+.light.center
+	.container
+		.row
+			%br
+			%h2.span12.bitter{style: "font-size: 45px;"} How It Works
+		.row#how-it-works
+			.span4.center
+				%div{style: "padding: 0 20px;"}
+					%h4.bitter Apply to Join
+					= image_tag "apply.png"
+					%p Connect through LinkedIn and tell us what type of introductions would help you most.
+			.span4.center
+				%div{style: "padding: 0 20px;"}
+					%h4.bitter Get Matched
+					= image_tag "matched.png"
+					%p We’ll match you with two other professionals you’d benefit from meeting.
+			.span4.center
+				%div{style: "padding: 0 20px;"}
+					%h4.bitter Meet New People
+					= image_tag "meet.png"
+					%p We’ll set your group up for coffee whenever and wherever it's convenient for all of you.
+.dark.center
+	.container
+		.row
+			%h2.span12.bitter You'll Make New Connections That Could Lead To...
+		#make-connections
+			.row
+				.span4.center
+					= image_tag "icon-excitingopportunities.png"
+					%h4.bitter Exciting Opportunities
+				.span4.center
+					= image_tag "icon-industryknowledge.png"
+					%h4.bitter New Industry Knowledge/Insights
+				.span4.center
+					= image_tag "icon-relevantcontacts.png"
+					%h4.bitter Relevant Contacts
+			.row{style: "margin-top: 20px;"}
+				.span4.center
+					= image_tag "icon-helpfulmentors.png"
+					%h4.bitter Inspiring Mentors
+				.span4.center
+					= image_tag "icon-valuablepartnerships.png"
+					%h4.bitter Valuable Partnerships
+				.span4.center
+					= image_tag "icon-innovativeideas.png"
+					%h4.bitter Innovative Ideas
+.blue.center
+	.container
+		.row
+			%h2.span12.bitter{style: "margin-bottom: 20px;"} Ready to Join?
+		.row.center
+			= link_to "Get Started", new_user_registration_path, class: "apply-button button-dark"
+			%br
+			%br
+			= link_to "Or click here to learn more.", faqs_path

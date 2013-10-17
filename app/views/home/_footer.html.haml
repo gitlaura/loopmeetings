@@ -1,16 +1,27 @@
-#footer
+#footer{style: "height: 140px;"}
   .container
     .row.uppercase
       .span4
-        %p= raw("&copy; Copyright Loop ") + Time.zone.now.year.to_s
+        %p Say Hi.
+        hello@loopmeetings.com 
+        %br
+        1-847-238-2576
+        %br
+        = link_to image_tag('twitter-icon.png'), "http://www.twitter.com/loopmeetings"
+        &nbsp
+        = link_to image_tag('facebook-icon.png'), "http://www.facebook.com/loopmeetings"
+        &nbsp
+        = link_to image_tag('instagram-icon.png'), "http://www.instagram.com/loopmeetings"
+
       .span4.center
         %p= image_tag "loop-footer-logo.png"
+        
+
       .span4{style: "text-align: right;"}
         %p
-          - if params[:controller] == "home" && params[:action] == "index"
-            = link_to "HOW IT WORKS", "#howitworks", class: "scroll"
-          - else
-            = link_to "HOW IT WORKS", root_url+"#howitworks"
-          = link_to "FAQS", learn_more_path
-          = link_to "BLOG", href="http://blog.loopmeetings.com"
-          = link_to "Apply", new_user_registration_path
+          = link_to "ABOUT", about_path
+          = link_to "BLOG", "http://www.blog.loopmeetings.com"
+          = link_to "FAQS", faqs_path
+          = link_to "Apply", apply_path
+        %br
+        %p= raw("&copy; Copyright Loop ") + Time.zone.now.year.to_s

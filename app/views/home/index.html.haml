@@ -1,46 +1,46 @@
 #hero
 	.container
 		.row
-			%h1.span12.bitter It's Like Networking, But Better.
-			%h4.span12 Loop sets up a coffee meeting for you and two people you should meet.
-			= link_to "Get Started", new_user_registration_path, class: "apply-button"
-			.clearfix
-
+			%h1.span12.bitter We help young professionals expand their networks through casual coffee meetings. 
+			%h4.span12 Meet smart people, learn about different careers, and discover opportunities. 
+		.row
+			= link_to "GET STARTED", apply_path, class: "apply-button"
+			.clearfix	
 #testimonials
-
 	.container
+		.row.center
+			%br
+			%h2.span12.bitter{style: "font-size: 30px;"} 99% of members want to go on another Loop Meeting
 		.row
 			.span2
 				= image_tag "testimonial-natalie.png"
 			.span3.testimonial
 				%div{ :style => "padding: 0 13px;" }
-				%p Awkward networking events are the worst. Loop meetings are a much better way to meet people. 
-				%span4.bitter{ :style => "font-weight: bold;" } - Natalie, Finance
+				%p Loop is a the best way to meet other young professionals. No more awkward networking events for me!
+				%span4.bitter{ :style => "font-weight: bold;" } - Angie, Creative Director
 			.span2
 				= image_tag "testimonial-tom.png"
 			.span3.testimonial
 				%div{ :style => "padding: 0 12px;" }
-				%p Loop meetings have been invaluable. I've learned a lot and ended up meeting one of my best team members.
+				%p Loop Meetings have been invaluable as an entreprenuer. I actually met one of my best employees through Loop.
 				%span4.bitter{ :style => "font-weight: bold;" } - Tom, Entrepreneur
 			.span2
 				= image_tag "testimonial-sara.png"
 			.span3.testimonial
 				%div{ :style => "padding: 0 12px;" }
-				%p Loop is helping me expand my network quickly in a new city. It's really like meeting friends of friends.  
-				%span4.bitter{ :style => "font-weight: bold;" } - Sara, Marketing & PR
-
-%a#howitworks{name: "howitworks"}
+				%p I'm new to the city, and Loop has been helping me meet really great people quickly.
+				%br
+				%span4.bitter{ :style => "font-weight: bold;" } - Sara, Marketing Manager
 .light.center
 	.container
 		.row
-			%br
-			%h2.span12.bitter{style: "font-size: 45px;"} How It Works
+			%h2.span12.bitter{style: "font-size: 40px;"} How It Works
 		.row#how-it-works
 			.span4.center
 				%div{style: "padding: 0 20px;"}
-					%h4.bitter Apply to Join
+					%h4.bitter Select Your Time
 					= image_tag "apply.png"
-					%p Connect through LinkedIn and tell us what type of introductions would help you most.
+					%p We offer weekly meetings at 8am and 6pm. Select dates and times that work for you.
 			.span4.center
 				%div{style: "padding: 0 20px;"}
 					%h4.bitter Get Matched
@@ -50,11 +50,11 @@
 				%div{style: "padding: 0 20px;"}
 					%h4.bitter Meet New People
 					= image_tag "meet.png"
-					%p We’ll set your group up for coffee whenever and wherever it's convenient for all of you.
+					%p We’ll schedule a meeting for your group at a centrally located coffee shop.
 .dark.center
 	.container
 		.row
-			%h2.span12.bitter You'll Make New Connections That Could Lead To...
+			%h2.span12.bitter{style: "font-size: 40px;"} You Could Discover...
 		#make-connections
 			.row
 				.span4.center
@@ -62,7 +62,7 @@
 					%h4.bitter Exciting Opportunities
 				.span4.center
 					= image_tag "icon-industryknowledge.png"
-					%h4.bitter New Industry Knowledge/Insights
+					%h4.bitter New Insights
 				.span4.center
 					= image_tag "icon-relevantcontacts.png"
 					%h4.bitter Relevant Contacts
@@ -79,9 +79,9 @@
 .blue.center
 	.container
 		.row
-			%h2.span12.bitter{style: "margin-bottom: 20px;"} Ready to Join?
-		.row.center
-			= link_to "Get Started", new_user_registration_path, class: "apply-button button-dark"
+			%h2.span12.bitter{style: "font-size: 40px;"} Ready to Join?
+		.row{style: "margin-top: 5px; text-decoration: none"}
+			= link_to "GET STARTED", apply_path, class: "apply-button button-dark"
+		.row{style: "font-size: 20px; margin-left: 8px;"}
 			%br
-			%br
-			= link_to "Or click here to learn more.", learn_more_path
+			%p Or learn more about meetings #{ link_to 'here', meetings_path} or membership #{ link_to 'here', membership_path}.

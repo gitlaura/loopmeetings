@@ -4,7 +4,49 @@ class HomeController < ApplicationController
   def index
   end
 
-  def learn_more
+  def faqs
+  end
+
+  def events
+  end
+
+  def about
+  end
+
+  def meetings
+  end
+
+  def apply
+  end
+
+  def manifesto
+  end
+
+  def membership
+  end
+
+  def membersonly
+  end
+
+  def meetingone
+  end
+
+  def meetingtwo
+  end
+
+  def meetingthree
+  end
+
+  def meetingfour
+  end
+
+  def update
+  end
+
+  def upgrade
+  end
+
+  def bios
   end
 
   def marketing
@@ -13,4 +55,5 @@ class HomeController < ApplicationController
 
   def landing_page
   end
+
 end

@@ -40,6 +40,9 @@ class HomeController < ApplicationController
   def meetingfour
   end
 
+  def monthly
+  end
+
   def update
   end
 

@@ -46,7 +46,7 @@ class HomeController < ApplicationController
   def update
   end
 
-  def upgrade
+  def annualmembership
   end
 
   def bios

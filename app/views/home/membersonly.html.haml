@@ -6,20 +6,22 @@
 	.container#meetings
 		.row
 			.span12
-				%h1.bitter Upgrade Membership
-				%p Annual Members receive unlimited Loop Meetings for just $29. #{ link_to 'Upgrade to an Annual Membership here.', upgrade_path}
+				%h1.bitter Sign Up for a Monthly Loop Meeting
+				%p <b>Recommended:</b> #{ link_to 'Sign up for a monthly meeting', monthly_path} <br> <span style="font-size: 14px"> (You can always cancel or change your date if something comes up.)</span>
 		.row
 			.span12
-				%h1.bitter Sign Up for a Loop Meeting
+				%h1.bitter Sign Up for Your Next Loop Meeting
 				%p <ul>
 				%li #{ link_to 'Wednesday, November 6th at 8am and 6pm', meetingone_path}
 				%li #{ link_to 'Wednesday, November 13th at 8am and 6pm', meetingtwo_path}
 				%li #{ link_to 'Wednesday, November 20th at 8am and 6pm', meetingthree_path}
 				%li #{ link_to 'Wednesday, December 4th at 8am and 6pm', meetingfour_path}
 				</ul>
-				%p <b>Recommended:</b> #{ link_to 'Sign up for a monthly meeting', monthly_path}
-				%p{style: "font-size:16px;"} (You can always cancel or change your date if something comes up.)	
+		.row
+			.span12
+				%h1.bitter Past Loop Meetings
+				%p Lost a business card? Need a reminder? #{ link_to "Email us to see who you've looped with.", "mailto:hello@loopmeetings.com?Subject=Who have I looped with?"}
 		.row
 			.span12
 				%h1.bitter Change Personal Information
-				%p Have your personal information or professional interests changed? #{ link_to "Tell us what's changed here.", update_path}
+				%p Has your personal or professional information changed? #{ link_to "Tell us what's changed here.", update_path}

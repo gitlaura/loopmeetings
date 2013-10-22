@@ -28,7 +28,7 @@ Maven::Application.routes.draw do
   get 'meetingtwo' => 'home#meetingtwo', as: :meetingtwo
   get 'meetingthree' => 'home#meetingthree', as: :meetingthree
   get 'meetingfour' => 'home#meetingfour', as: :meetingfour
-  get 'upgrade' => 'home#upgrade', as: :upgrade
+  get 'annualmembership' => 'home#annualmembership', as: :annualmembership
   get 'update' => 'home#update', as: :update
   get 'bios' => 'home#bios', as: :bios
   get 'monthly' => 'home#monthly', as: :monthly

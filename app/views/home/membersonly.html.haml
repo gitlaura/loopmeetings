@@ -20,8 +20,12 @@
 		.row
 			.span12
 				%h1.bitter Past Loop Meetings
-				%p Lost a business card? Need a reminder? #{ link_to "Email us to see who you've looped with.", "mailto:hello@loopmeetings.com?Subject=Who have I looped with?"}
+				%p Lost a business card? Need a reminder? #{ link_to "Email us to see who you've looped with.", "mailto:hello@loopmeetings.com?Subject=Show me my Loop Meetings!", :target => :_blank}
 		.row
 			.span12
 				%h1.bitter Change Personal Information
 				%p Has your personal or professional information changed? #{ link_to "Tell us what's changed here.", update_path}
+		.row
+			.span12
+				%h1.bitter Join Our LinkedIn Group
+				%p Want to talk with other Loop members? #{ link_to "Join our Members Only LinkedIn community.", href="http://www.linkedin.com/groups?home=&gid=6534322", :target => :_blank}

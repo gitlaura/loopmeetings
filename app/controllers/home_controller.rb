@@ -13,6 +13,9 @@ class HomeController < ApplicationController
   def about
   end
 
+  def jobs
+  end
+
   def meetings
   end
 

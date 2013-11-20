@@ -32,6 +32,7 @@ Maven::Application.routes.draw do
   get 'update' => 'home#update', as: :update
   get 'bios' => 'home#bios', as: :bios
   get 'monthly' => 'home#monthly', as: :monthly
+  get 'jobs' => 'home#jobs', as: :jobs
 
   get '/r/:marketing_campaign_slug' => 'home#marketing', :as => :marketing_campaign
   get '/r' => redirect('/')

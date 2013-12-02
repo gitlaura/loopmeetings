@@ -7,6 +7,9 @@ class HomeController < ApplicationController
   def faqs
   end
 
+  def ideas
+  end
+
   def events
   end
 

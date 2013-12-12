@@ -47,6 +47,52 @@
     }
 }
 
+#formstack {
+	margin: 0 auto;
+	box-shadow: 10px 10px 5px #888888;
+	border-style:solid;
+	border-width:0px;
+	h4 {
+		font-weight: normal;
+		color: 003939;
+		font-family: 'Bitter', serif; 
+	}
+
+	.fsBody label {
+		font-weight:normal;
+		font-size: 16px;
+		color: #000000; 
+	}
+	.fsBody legend {
+		font-weight:normal;
+		font-size: 16px;
+		color: #000000; 
+		font-family: 'proxima_nova_rgregular';
+	}
+	select {
+  		width: 100px;
+	}
+	select,
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input {
+	  	margin-bottom: 1px;
+	}
+}
+
 .headline {
   font-size: 48px;
 }

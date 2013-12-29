@@ -1,9 +1,23 @@
 .green.center
 	.container
 		.row
-			%h2.span12.bitter Try something different.
+			%h2.span12.bitter Put the business cards down. Actually get to know people.
 .light
 	.container#meetings
+		.row
+			.span12
+				%h1.bitter Upcoming Loop Meetings
+				%br
+		.row{style: "margin-left: 100px;"}
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_monthly.png'), monthly_path
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_140108.png'), meetingone_path
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_140115.png'), meetingtwo_path
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_140122.png'), meetingthree_path
+
 		.row
 			.span12
 				%h1.bitter What are Loop Meetings?
@@ -24,20 +38,8 @@
 				%p There will come a time when you'll need help with something, need to hire someone, need to find a new job, or need a contact to grow your business. Don't wait until the pressure's on to start building relationships. You should start now.
 				%br
 		.row.center
-			= link_to "Apply Now For Free", apply_path, class: "apply-button"
-.dark	
-	.container#learn-more			
-		.row{style: "color: #ffffff;"}
-			.span12
-				%h1.bitter{style: "color: #ffffff;"} Upcoming Loop Meetings
-				%ul
-				%li Wednesday, January 8th at 8am and 6pm
-				%li Wednesday, January 15th at 8am and 6pm
-				%li Wednesday, January 22nd at 8am and 6pm
-				%li Wednesday, January 29th at 8am and 6pm
-				%br
-				%p We offer Loop Meetings every week. You can sign up for one of these meetings when you apply #{link_to "here", apply_path}. Once you're a member, we will send you a link to sign up for as many meetings as you'd like.
-.blue	
+			= link_to "Join Now For Free", apply_path, class: "apply-button"
+	.blue	
 	.container#learn-more		
 		.row{style: "color: #ffffff;"}
 			.span12

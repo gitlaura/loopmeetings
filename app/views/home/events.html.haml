@@ -1,44 +1,47 @@
 .green.center
 	.container
 		.row
-			%h2.span12.bitter Wingmen welcome. The more the merrier.  
-.light
+			%h2.span12.bitter Coffee or beer (or both).
+.light{style: "padding:10px 0;"}
 	.container#learn-more
 		.row
-			.span12
-				%h1.bitter{style: "color: #003939; margin-bottom: 20px;"} Upcoming Events
-				%p <b>Monthly Junior Board Night</b>
-				%p Listen to representatives from 3 non-profits in Chicago. They are looking for people like you to join their junior boards or to help out in other ways. They will introduce you to great opportunities to help a cause, meet awesome people, and develop new skills outside of work.
-				%p Location & Date: TBD	
-				%p Who: All are welcome
-				%p Price: $15 for non-members; $5 for members
-				%br
-				%br
-				%p <b>Entrepreneur Happy Hour</b>
-				%p Have a drink with Loop members who are company founders, work in startups, interested in entrepreneurship, or love technology. See people you've met on Loop Meetings or meet someone new.
-				%p Location & Date: TBD	
-				%p Who: & their friends 
-				%p Price: $5 (one drink included)
-				%br
-				%br
-				%p <b>Finance Happy Hour</b>	
-				%p Have a drink with Loop members who are interested in finance, accounting, venture capital, and private equity. See people you've met on Loop Meetings or meet someone new.
-				%p Location & Date: TBD	
-				%p Who: Members & their friends 
-				%p Price: $5 (one drink included)
-				%br
-				%br
-				%p <b>Marketing & PR Happy Hour</b>
-				%p Have a drink with Loop members who are interested in marketing, PR, advertising, and everything in between. See people you've met on Loop Meetings or meet someone new.
-				%p Location & Date: TBD	
-				%p Who: Members & their friends 
-				%p Price: $5 (one drink included)
+			%h1.span12.bitter{style: "margin-bottom: 0px; margin-left: 30px;"} Loop Meetings
+			%p{style: "margin-left: 30px; margin-bottom: 20px;"}Get matched, grab coffee, and actually get to know relevant people. Learn more #{link_to "here", meetings_path}.
+		.row{style: "margin-left: 100px;"}
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_monthly.png'), monthly_path
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_140108.png'), meetingone_path
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_140115.png'), meetingtwo_path
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_140122.png'), meetingthree_path
+		.row
+			%h1.span12.bitter{style: "margin-bottom: 0px; margin-left: 30px;"} Loop Events
+			%p{style: "margin-left: 30px; margin-bottom: 20px;"}Reconnect, learn, and discover opportunites in a relaxed environment.
+		.row{style: "margin-left: 100px;"}
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('braintree_140110.png'), href="http://www.eventbrite.com/e/loop-office-tour-braintree-tickets-9936244575"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('google_140117.png'), href="http://www.eventbrite.com/e/loop-office-tour-lunch-google-chicago-tickets-9937498325"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopspeaker_140122.png'), href="http://www.eventbrite.com/e/loop-speaker-winter-bike-commuting-for-beginners-with-brian-morrissey-tickets-9965961459"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('happyhour_140123.png'), href="https://www.eventbrite.com/e/wingman-happy-hour-tickets-9949712859"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('fairlife_140124.png'), href="http://www.eventbrite.com/e/loop-office-tour-fairlife-believeinbetter-tickets-9937708955"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('juniorboard_140128.png'), href="https://www.eventbrite.com/e/junior-board-night-learn-how-to-get-involved-with-chicago-non-profits-tickets-9964850135"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopspeaker_140130.png'), href="https://www.eventbrite.com/e/loop-speaker-top-10-networking-dos-and-donts-with-jenny-fukumoto-tickets-9966081819"
+		%br
+		%br
 .dark	
 	.container#learn-more			
 		.row{style: "color: #ffffff;"}
 			.span12
 				%h1.bitter{style: "color: #ffffff;"} How do I sign up?
-				%p When your membership application has been reviewed, we will send you a link to sign up for as many events as you'd like. Please keep in mind that you cannot sign up for TBD events. We'll let you know when we have scheduled events.
+				%p If you're interested in one of the events above, click 'View Event' to sign up. If you're a Loop member, you can sign up for all of our events. If you're not a Loop member yet, you're invited to sign up for events that indicate "All Are Welcome". Join #{link_to "here", apply_path} to sign up for all events.
 .blue	
 	.container#learn-more		
 		.row{style: "color: #ffffff;"}
@@ -47,5 +50,5 @@
 				%p
 					We'd love to hear from you. Email us at
 					= mail_to "hello@loopmeetings.com"
-					if you have any questions, suggestions, or just want to say hi.
+					if you would like to host an event or if you have any suggestions.
 				%br

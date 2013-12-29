@@ -2,20 +2,38 @@
 	.container
 		.row
 			%h2.span12.bitter Welcome to the community. Let's get Looping.
-.light
-	.container#meetings
+.light{style: "padding:10px 0;"}
+	.container#learn-more
 		.row
 			.span12
-				%h1.bitter Sign Up for a Monthly Loop Meeting
-				%p <b>Recommended:</b> #{ link_to 'Sign up for a monthly meeting', monthly_path} <br> <span style="font-size: 14px"> (You can always cancel or change your date if something comes up.)</span>
+				%h1.bitter Loop Meetings
+		.row{style: "margin-left: 100px;"}
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_monthly.png'), monthly_path
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_140108.png'), meetingone_path
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_140115.png'), meetingtwo_path
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopmeeting_140122.png'), meetingthree_path
 		.row
 			.span12
-				%h1.bitter Sign Up for Your Next Loop Meeting
-				%ul
-				%li #{ link_to 'Wednesday, January 8th at 8am and 6pm', meetingthree_path}
-				%li #{ link_to 'Wednesday, January 15th at 8am and 6pm', meetingfour_path}
-				%li #{ link_to 'Wednesday, January 22nd at 8am and 6pm', meetingone_path}
-				%li #{ link_to 'Wednesday, January 29th at 8am and 6pm', meetingtwo_path}
+				%h1.bitter Loop Events
+		.row{style: "margin-left: 100px;"}
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('braintree_140110.png'), href="http://www.eventbrite.com/e/loop-office-tour-braintree-tickets-9936244575"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('google_140117.png'), href="http://www.eventbrite.com/e/loop-office-tour-lunch-google-chicago-tickets-9937498325"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopspeaker_140122.png'), href="http://www.eventbrite.com/e/loop-speaker-winter-bike-commuting-for-beginners-with-brian-morrissey-tickets-9965961459"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('happyhour_140123.png'), href="https://www.eventbrite.com/e/wingman-happy-hour-tickets-9949712859"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('fairlife_140124.png'), href="http://www.eventbrite.com/e/loop-office-tour-fairlife-believeinbetter-tickets-9937708955"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('juniorboard_140128.png'), href="https://www.eventbrite.com/e/junior-board-night-learn-how-to-get-involved-with-chicago-non-profits-tickets-9964850135"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('loopspeaker_140130.png'), href="https://www.eventbrite.com/e/loop-speaker-top-10-networking-dos-and-donts-with-jenny-fukumoto-tickets-9966081819"
 		.row
 			.span12
 				%h1.bitter Past Loop Meetings

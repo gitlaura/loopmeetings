@@ -18,4 +18,21 @@
             %li= link_to "EVENTS", events_path
             %li= link_to "MEMBERSHIP", membership_path
             %li= link_to "JOIN", apply_path
+/            %li= link_to "GET INVITED", "#InviteModal", "data-toggle" => "modal"
 
+<div id="InviteModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="InviteModalLabel" aria-hidden="true">
+<div class="headerlabel">   
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><center>          
+</div>
+<div class="modal-body" max-height: 800px;>  
+ 
+#outer{style: "width: 100%;"}
+  #formstack{style: "margin-bottom: 0px; margin-top: 0px; box-shadow: 0px 0px 0px #888888;"}
+    %script{src: "https://www.formstack.com/forms/js.php?no_style=1&form=1660392&viewkey=Jfj2l0krMF&style_version=v3", type: "text/javascript"}
+    %noscript
+      %a{href: "https://www.formstack.com/forms/?1660392-Jfj2l0krMF", title: "Online Form"} Online Form
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+</div>
+</div>

@@ -7,6 +7,9 @@ class HomeController < ApplicationController
   def faqs
   end
 
+  def lightbox
+  end
+
   def ideas
   end
 

@@ -16,6 +16,7 @@ Maven::Application.routes.draw do
   resources :invitations, :only => [:new, :create, :index]
 
   get 'faqs' => 'home#faqs', as: :faqs
+  get 'lightbox' => 'home#lightbox', as: :lightbox
   get 'ideas' => 'home#ideas', as: :ideas
   get 'meetings' => 'home#meetings', as: :meetings
   get 'apply' => 'home#apply', as: :apply

@@ -1,3 +1,4 @@
+
 .green.center
 	.container
 		.row
@@ -6,7 +7,11 @@
 	.container#learn-more
 		.row
 			.span12
-				%h1.bitter Loop Meetings
+				%h1.bitter Change Membership
+				%p Check out the options and upgrade your membership #{ link_to "here.", change_path}
+		.row
+			.span12
+				%h1.bitter Sign up for Loop Meetings
 		.row{style: "margin-left: 100px;"}
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
 				= link_to image_tag('loopmeeting_monthly.png'), monthly_path
@@ -18,7 +23,7 @@
 				= link_to image_tag('loopmeeting_140219.png'), meetingthree_path
 		.row
 			.span12
-				%h1.bitter Loop Events
+				%h1.bitter Sign up for Loop Events
 		.row{style: "margin-left: 100px;"}
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
 				= link_to image_tag('braintree_140110.png'), href="http://www.eventbrite.com/e/loop-office-tour-braintree-tickets-9936244575"

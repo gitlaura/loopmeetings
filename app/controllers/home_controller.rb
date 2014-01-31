@@ -7,7 +7,13 @@ class HomeController < ApplicationController
   def faqs
   end
 
+  def membership
+  end
+
   def lightbox
+  end
+
+  def cancel
   end
 
   def ideas
@@ -34,6 +40,9 @@ class HomeController < ApplicationController
   def membership
   end
 
+  def change
+  end
+
   def membersonly
   end
 
@@ -56,6 +65,9 @@ class HomeController < ApplicationController
   end
 
   def annualmembership
+  end
+
+  def monthlymembership
   end
 
   def bios

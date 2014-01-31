@@ -1,7 +1,7 @@
 .navbar.no-margin
   .navbar-inner
     .container
-      = link_to image_tag('loop-header-logo.png', style: "height: 55px;"), root_url, class: 'brand'
+      = link_to image_tag('loop-header-logo.png', style: "height: 55px;"), root_url, class: 'brand', style:"padding-bottom:0px;"
       %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
         %span.icon-bar
         %span.icon-bar
@@ -17,8 +17,9 @@
             %li= link_to "MEETINGS", meetings_path
             %li= link_to "EVENTS", events_path
             %li= link_to "MEMBERSHIP", membership_path
-            %li= link_to "JOIN", apply_path
-/            %li= link_to "GET INVITED", "#InviteModal", "data-toggle" => "modal"
+            %li= link_to "REQUEST INVITE", "#InviteModal", "data-toggle" => "modal"
+    .container#second{style: "padding-right: 35px;"}
+      %p.pull-right{style: "margin-bottom: 5px;"}= link_to "Already a member?", membersonly_path
 
 <div id="InviteModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="InviteModalLabel" aria-hidden="true">
 <div class="headerlabel">   

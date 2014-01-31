@@ -2,42 +2,34 @@
 	.container
 		.row
 			%h2.span12.bitter Life is short. You should love your career.
-.row#about
-	.span2.light
-		.span4
-			%h1.bitter{style: "color: #003939; margin-bottom: 10px;"}
-				Here's a crazy idea: 
-				%br
-				People helping people.
-			%p{style: "margin-bottom:20px;"} <b> What is Loop?</b> Loop is the easiest, most enjoyable way to get to know other young professionals and improve your career.
-			%p{style: "margin-bottom:20px;"} <b> Why does that matter?</b> It's harder than ever to navigate your career, stay ahead at work, and land your dream job. There are countless blogs and career sites dedicated to helping you solve these problems. <i>But guess what?</i>  You aren't going to get there without the help of real people. Relationships are how you discover exciting opportunities and gain meaning from work.
-			%h1.bitter{style: "color: #003939; margin-bottom: 10px;"}Don't miss out.
-			%p <b> Who can join Loop?</b> Loop is a community of more than 600 young professionals in Chicago in startups, marketing, technology, consulting, finance, accounting, venture capital, private equity, design, and more. We have a selective application process, taking the following criteria into account:
-			%p <ul>
-			%li Updated LinkedIn profile
-			%li Graduated from a top university
-			%li Employment status
-			%li Taken initiative at work or with other organizations
-			%li Young professional, between the ages of 22-35 </ul>
-	.span3#pricing.center
+.light{style: "padding-bottom:5px;"}
+	.container
+		.row
+			%p{style:"margin-left: 50px"} #{link_to "Click here to go back.", membersonly_path}
+.light{style:"padding-top:0px;"}
+	.container#pricing.center
 		%h1.bitter{style: "color: #003939; margin-bottom: 10px;"}Membership Options
-		.row{style: "margin-bottom: 20px;"}
-			= link_to "Request Invite", "#InviteModal", "data-toggle" => "modal", class: "apply-button"
-			%br
-			
-		%table.table.table-bordered#pricing_table
+		%table.table.table-bordered#pricing_table{style: "width: 800px;"}
 			%thead
 				%tr
 					%th{ :style => "background: #52898c; width: 250px;" } What's Included?
 					%th.black-cell{ :style => "background: #d6eef0; width: 80px;" } Free
-					%th{ :style => "background: #709ea0; width: 100px;"} Monthly 
+					%th{ :style => "background: #709ea0; width: 100px;"} 
+						Monthly 
+						%br
+
 					%th{ :style => "background: #52898c; width: 100px;"} Annual
 			%tbody
 				%tr
-					%td.right{ :style => "background: #427c7e; text-align: right"}
-						Access to the Loop Community
-						%br 
-						(Join our private LinkedIn Group)
+					%td.right{ :style => "background: #52898c; text-align: right"}
+					%td.black-cell{ :style => "background: #d6eef0;"}
+						%span.meeting-number 
+					%td{ :style => "background: #709ea0;"}
+						= link_to "Select", monthlymembership_path, class: "apply-button", style: "margin-left:0px;"
+					%td{ :style => "background: #52898c;"}
+						= link_to "Select", annualmembership_path, class: "apply-button", style: "margin-left:0px;"
+				%tr
+					%td.right{ :style => "background: #427c7e; text-align: right"}Access to the Loop Community
 					%td.black-cell{ :style => "background: #cae2e4;"}
 						%span.meeting-number X
 					%td{ :style => "background: #629293;"}
@@ -73,9 +65,9 @@
 						%span.meeting-number X
 				%tr
 					%td.right{ :style => "background: #52898c;"}  
-						Networking Consultation
+						Career Consultation
 						%br
-						(Phone call with Loop)
+						(Phone call with Loop team member)
 					%td.black-cell{ :style => "background: #d6eef0;"}
 					%td{ :style => "background: #709ea0;"}
 					%td{ :style => "background: #52898c;"}
@@ -102,10 +94,16 @@
 						\/year
 						%br
 						30 Days Free
-.light
+				%tr
+					%td.right{ :style => "background: #427c7e; text-align: right"}
+					%td.black-cell{ :style => "background: #cae2e4;"}
+						%span.meeting-number 
+					%td{ :style => "background: #629293;"}
+						= link_to "Select", monthlymembership_path, class: "apply-button", style: "margin-left:0px;"
+					%td{ :style => "background: #427c7e;"}
+						= link_to "Select", annualmembership_path, class: "apply-button", style: "margin-left:0px;"
+.light{style: "padding-top:0px;"}
 	.container#learn-more
 		.row.center
 			.span12
-				%p Get started for free!
-		.row.center#pricing{ :style => "padding-top: 0px;"}
-			= link_to "Request Free Invite", "#InviteModal", "data-toggle" => "modal", class: "apply-button"
+				%p Or downgrade or cancel your memberhsip #{ link_to "here.", cancel_path}

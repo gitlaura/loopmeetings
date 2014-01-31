@@ -22,6 +22,7 @@ Maven::Application.routes.draw do
   get 'apply' => 'home#apply', as: :apply
   get 'manifesto' => 'home#manifesto', as: :manifesto
   get 'membership' => 'home#membership', as: :membership
+  get 'change' => 'home#change', as: :change
   get 'about' => 'home#about', as: :about
   get 'meetings_10_9' => 'home#meetings_10_9', as: :meetings_10_9
   get 'events' => 'home#events', as: :events
@@ -31,10 +32,12 @@ Maven::Application.routes.draw do
   get 'meetingthree' => 'home#meetingthree', as: :meetingthree
   get 'meetingfour' => 'home#meetingfour', as: :meetingfour
   get 'annualmembership' => 'home#annualmembership', as: :annualmembership
+  get 'monthlymembership' => 'home#monthlymembership', as: :monthlymembership
   get 'update' => 'home#update', as: :update
   get 'bios' => 'home#bios', as: :bios
   get 'monthly' => 'home#monthly', as: :monthly
   get 'jobs' => 'home#jobs', as: :jobs
+  get 'cancel' => 'home#cancel', as: :cancel
 
   get '/r/:marketing_campaign_slug' => 'home#marketing', :as => :marketing_campaign
   get '/r' => redirect('/')

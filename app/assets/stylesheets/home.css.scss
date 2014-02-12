@@ -247,6 +247,16 @@ label, legend {
 		margin-top: 30px;
 	}
 }
+
+.span5.one{
+	width: 48%;
+	margin: 0 2% 0 0;
+}
+.span5.two{
+	width: 48%;
+	margin: 0 0 0 2%;
+}
+
 #about {
 	color: #828385; 
 	font-size: 20px; 
@@ -268,9 +278,6 @@ label, legend {
     .span3 {
    		width: 49%;
    		margin: 0px;
-      }
-    .span4 {
-    	width: 90%;
       }
     a {
 		color: #003939;
@@ -324,10 +331,7 @@ label, legend {
 }
 
 #pricing {
-  padding-top: 10px;
-  padding-bottom: 5px;
-
-  .apply-button{
+	.apply-button{
     	background: #f55f46;
     	color: #ffffff;
     }
@@ -336,7 +340,6 @@ label, legend {
 
     margin: 0 auto;
     table-layout: fixed;
-    width: 530px;
     border: none;
     border-collapse: collapse;
     color: #ffffff;
@@ -353,7 +356,7 @@ label, legend {
     th {
       font-family: 'Bitter', serif;
       font-weight: 100;
-      font-size: 22px;
+      font-size: 18px;
       padding: 24px 10px;
       border: none;
       text-align: center;
@@ -364,6 +367,15 @@ label, legend {
       border: none;
       text-align: center;
       font-size: 16px;
+      	.one {
+      		background: red;
+      	}
+		.two { 
+			background: #d6eef0; 
+		}
+		.three { 
+			background: #709ea0; 
+		}
     }
 
     .black-cell {

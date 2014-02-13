@@ -17,7 +17,6 @@
 					%th{ :style => "background: #709ea0; width: 100px;"} 
 						Monthly 
 						%br
-
 					%th{ :style => "background: #52898c; width: 100px;"} Annual
 			%tbody
 				%tr
@@ -28,66 +27,61 @@
 						= link_to "Select", monthlymembership_path, class: "apply-button", style: "margin-left:0px;"
 					%td{ :style => "background: #52898c;"}
 						= link_to "Select", annualmembership_path, class: "apply-button", style: "margin-left:0px;"
-				%tr
-					%td.right{ :style => "background: #427c7e; text-align: right"}Access to the Loop Community
-					%td.black-cell{ :style => "background: #cae2e4;"}
+				%tr.even
+					%td.1.right{ :style => "background: #427c7e; text-align: right"}
+						Access to the Loop Community
+						%br (Private LinkedIn Group)
+					%td.2.black-cell{ :style => "background: #cae2e4;"}
 						%span.meeting-number X
-					%td{ :style => "background: #629293;"}
+					%td.3{ :style => "background: #629293;"}
 						%span.meeting-number X
-					%td{ :style => "background: #427c7e;"}
-						%span.meeting-number X
-				%tr
-					%td.right{ :style => "background: #52898c;"}Invitations to Loop Events
-					%td.black-cell{ :style => "background: #d6eef0;"}
-						%span.meeting-number X
-					%td{ :style => "background: #709ea0;"}
-						%span.meeting-number X
-					%td{ :style => "background: #52898c;"}
+					%td.1{ :style => "background: #427c7e;"}
 						%span.meeting-number X
 				%tr
-					%td.right{ :style => "background: #f55f46;"}Loop Meetings
-					%td.black-cell{ :style => "background: #ffa094;"}
-					%td{ :style => "background: #ff7c6e;"}Unlimited
-					%td{ :style => "background: #f55f46;"}Unlimited
+					%td.1.right{ :style => "background: #52898c;"}Invitations to Loop Events & Office Tours
+					%td.2.black-cell{ :style => "background: #d6eef0;"}
+						%span.meeting-number X
+					%td.3{ :style => "background: #709ea0;"}
+						%span.meeting-number X
+					%td.1{ :style => "background: #52898c;"}
+						%span.meeting-number X
+				%tr.special
+					%td.1.right{ :style => "background: #f55f46;"}Loop Meetings
+					%td.2.black-cell{ :style => "background: #ffa094;"}
+					%td.3{ :style => "background: #ff7c6e;"}Unlimited
+					%td.1{ :style => "background: #f55f46;"}Unlimited
 				%tr
-					%td.right{ :style => "background: #52898c;"}Free/Discounted Tickets to Events
-					%td.black-cell{ :style => "background: #d6eef0;"}
-					%td{ :style => "background: #709ea0;"}
+					%td.1.right{ :style => "background: #52898c;"}Free/Discounted Tickets to Events
+					%td.2.black-cell{ :style => "background: #d6eef0;"}
+					%td.3{ :style => "background: #709ea0;"}
 						%span.meeting-number X
-					%td{ :style => "background: #52898c;"}
+					%td.1{ :style => "background: #52898c;"}
 						%span.meeting-number X
-				%tr
-					%td.right{ :style => "background: #427c7e;"}Office Tours
-					%td.black-cell{ :style => "background: #cae2e4;"}
-					%td{ :style => "background: #629293;"}
-						%span.meeting-number X
-					%td{ :style => "background: #427c7e;"}
-						%span.meeting-number X
-				%tr
-					%td.right{ :style => "background: #52898c;"}  
-						Career Consultation
+				%tr.even
+					%td.1.right{ :style => "background: #427c7e;"}  
+						Networking Consultation
 						%br
-						(Phone call with Loop team member)
-					%td.black-cell{ :style => "background: #d6eef0;"}
-					%td{ :style => "background: #709ea0;"}
-					%td{ :style => "background: #52898c;"}
+						(Phone call with Loop)
+					%td.2.black-cell{ :style => "background: #cae2e4;"}
+					%td.3{ :style => "background: #629293;"}
+					%td.1{ :style => "background: #427c7e;"}
 						%span.meeting-number X
 				%tr
-					%td{ :style => "padding-top:5px; background: #427c7e;"}
-					%td.black-cell{ :style => "padding-top:5px; background: #cae2e4;"}
+					%td{ :style => "padding-top:5px; background: #52898c;"}
+					%td.black-cell{ :style => "padding-top:5px; background: #d6eef0;"}
 						%br
 						$
 						%span.dollar-number 0
 						%br
 						Free!
-					%td{ :style => "padding-top:5px; background: #629293;"}
+					%td{ :style => "padding-top:5px; background: #709ea0;"}
 						%br
 						$
 						%span.dollar-number 5
 						\/month
 						%br
 						30 Days Free
-					%td{ :style => "padding-top:5px; background: #427c7e;"}
+					%td{ :style => "padding-top:5px; background: #52898c;"}
 						%br
 						$
 						%span.dollar-number 50
@@ -95,12 +89,12 @@
 						%br
 						30 Days Free
 				%tr
-					%td.right{ :style => "background: #427c7e; text-align: right"}
-					%td.black-cell{ :style => "background: #cae2e4;"}
+					%td.right{ :style => "background: #52898c; text-align: right"}
+					%td.black-cell{ :style => "background: #d6eef0;"}
 						%span.meeting-number 
-					%td{ :style => "background: #629293;"}
+					%td{ :style => "background: #709ea0;"}
 						= link_to "Select", monthlymembership_path, class: "apply-button", style: "margin-left:0px;"
-					%td{ :style => "background: #427c7e;"}
+					%td{ :style => "background: #52898c;"}
 						= link_to "Select", annualmembership_path, class: "apply-button", style: "margin-left:0px;"
 .light{style: "padding-top:0px;"}
 	.container#learn-more

@@ -346,11 +346,11 @@ label, legend {
     text-align: center;
 
     .meeting-number {
-      font-size: 30px;
+      font-size: 24px;
     }
 
     .dollar-number {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     th {
@@ -375,6 +375,10 @@ label, legend {
 		}
 		.three { 
 			background: #709ea0; 
+		}
+		a {
+			color: #ffffff;
+			text-decoration: underline;
 		}
     }
 

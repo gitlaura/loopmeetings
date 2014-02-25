@@ -10,18 +10,20 @@
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
 				= link_to image_tag('loopmeeting_monthly.png'), monthly_path
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
-				= link_to image_tag('loopmeeting_140219.png'), meetingone_path
+				= link_to image_tag('loopmeeting_140305.png'), meetingone_path
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
-				= link_to image_tag('loopmeeting_140305.png'), meetingtwo_path
+				= link_to image_tag('loopmeeting_140402.png'), meetingtwo_path
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
-				= link_to image_tag('loopmeeting_140312.png'), meetingthree_path
+				= link_to image_tag('loopmeeting_140507.png'), meetingthree_path
 		.row
 			%h1.span12.bitter{style: "margin-bottom: 10px; margin-left: 30px;"} Upcoming Loop Events
 		.row{style: "margin-left: 100px;"}
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
-				= link_to image_tag('trunkclub_140213.png'), href="http://loopofficetourattrunkclub.splashthat.com/"
+				= link_to image_tag('giveforward_140227.png'), href="http://loopofficetouratgiveforward.splashthat.com/", :target=>"_blank"
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
-				= link_to image_tag('giveforward_140227.png'), href="http://loopofficetouratgiveforward.splashthat.com/"
+				= link_to image_tag('digitas_140307.png'), href="http://loopofficetouratdigitas.splashthat.com/", :target=>"_blank"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('threadless_140328.png'), href="http://loopofficetouratthreadless.splashthat.com/", :target=>"_blank"
 		.row
 			%h1.span12.bitter{style: "margin-bottom: 10px; margin-left: 30px;"} Past Loop Events
 		.row{style: "margin-left: 100px;"}
@@ -39,6 +41,8 @@
 				= link_to image_tag('juniorboard_140128.png'), href="https://www.eventbrite.com/e/junior-board-night-learn-how-to-get-involved-with-chicago-non-profits-tickets-9964850135"
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
 				= link_to image_tag('loopspeaker_140130.png'), href="https://www.eventbrite.com/e/loop-speaker-top-10-networking-dos-and-donts-with-jenny-fukumoto-tickets-9966081819"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('trunkclub_140213.png'), href="http://loopofficetourattrunkclub.splashthat.com/"
 .light{style: "padding: 5px;"}
 	.container#learn-more
 		.row
@@ -53,7 +57,7 @@
 		.row{style: "color: #ffffff;"}
 			.span12
 				%h1.bitter{style: "color: #ffffff;"} How do I sign up?
-				%p If you're interested in one of the events above, click 'View Event' to sign up. If you're a Loop member, you can sign up for all of our events. If you're not a Loop member yet, you're invited to sign up for events that indicate "All Are Welcome". Join #{link_to "here", apply_path} to sign up for all events.
+				%p Loop Members can sign up #{link_to "here", membersonly_path}. If you're not a Loop member yet, you're invited to sign up for events that indicate "All Are Welcome". Join Loop to sign up for all events.
 .blue	
 	.container#learn-more		
 		.row{style: "color: #ffffff;"}

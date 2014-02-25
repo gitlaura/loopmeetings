@@ -1,0 +1,102 @@
+.green.center
+	.container
+		.row
+			%h2.span12.bitter Life is short. You should love your career.
+.light
+	.container#learn-more
+		.span5.one
+			%h1.bitter{style: "color: #003939; margin-bottom: 10px;"}
+				Here's a crazy idea: 
+				%br
+				People helping people.
+			%p{style: "margin-bottom:20px;"} <b> What is Loop?</b> Loop is the easiest, most enjoyable way to get to know other young professionals and improve your career.
+			%p{style: "margin-bottom:20px;"} <b> Why does that matter?</b> It's harder than ever to navigate your career, stay ahead at work, and land your dream job. There are countless blogs and career sites dedicated to helping you solve these problems. <i>But guess what?</i>  You aren't going to get there without the help of real people. Relationships are how you discover exciting opportunities and gain meaning from work.
+			%h1.bitter{style: "color: #003939; margin-bottom: 10px;"}Don't miss out.
+			%p <b> Who can join Loop?</b> Loop is a community of more than 600 young professionals in Chicago in startups, marketing, technology, consulting, finance, accounting, venture capital, private equity, design, and more. We have a selective application process, taking the following criteria into account:
+			%p <ul>
+			%li Updated LinkedIn profile
+			%li Graduated from a top university
+			%li Employment status
+			%li Taken initiative at work or with other organizations
+			%li Young professional, between the ages of 22-35 </ul>
+		.span5.two#pricing.center
+			%h1.bitter{style: "color: #003939; margin-bottom: 10px;"}Membership Options
+			.row{style: "margin-bottom: 20px;"}
+				= link_to "Request Free Invite", "#InviteModal", "data-toggle" => "modal", class: "apply-button"
+				%br
+				
+			%table.table.table-bordered#pricing_table
+				%thead
+					%tr
+						%th.1{ :style => "background: #52898c; width: 40%;" } What's Included?
+						%th.2.black-cell{ :style => "background: #d6eef0; width: 16%;" } Free
+						%th.3{ :style => "background: #709ea0; width: 22%;"} Monthly 
+						%th.1{ :style => "background: #52898c; width: 22%;"} Annual
+				%tbody
+					%tr.even
+						%td.1.right{ :style => "background: #427c7e; text-align: right"}
+							Access to the Loop Community (Private LinkedIn Group)
+						%td.2.black-cell{ :style => "background: #cae2e4;"}
+							%span.meeting-number X
+						%td.3{ :style => "background: #629293;"}
+							%span.meeting-number X
+						%td.1{ :style => "background: #427c7e;"}
+							%span.meeting-number X
+					%tr
+						%td.1.right{ :style => "background: #52898c;"}Invitations to Loop Events & Office Tours
+						%td.2.black-cell{ :style => "background: #d6eef0;"}
+							%span.meeting-number X
+						%td.3{ :style => "background: #709ea0;"}
+							%span.meeting-number X
+						%td.1{ :style => "background: #52898c;"}
+							%span.meeting-number X
+					%tr.special
+						%td.1.right{ :style => "background: #f55f46;"}Loop Meetings
+						%td.2.black-cell{ :style => "background: #ffa094;"}
+						%td.3{ :style => "background: #ff7c6e;"}Unlimited
+						%td.1{ :style => "background: #f55f46;"}Unlimited
+					%tr
+						%td.1.right{ :style => "background: #52898c;"}Free/Discounted Tickets to Events
+						%td.2.black-cell{ :style => "background: #d6eef0;"}
+						%td.3{ :style => "background: #709ea0;"}
+							%span.meeting-number X
+						%td.1{ :style => "background: #52898c;"}
+							%span.meeting-number X
+					%tr.even
+						%td.1.right{ :style => "background: #427c7e;"}  
+							Networking Consultation
+							%br
+							(Phone call with Loop)
+						%td.2.black-cell{ :style => "background: #cae2e4;"}
+						%td.3{ :style => "background: #629293;"}
+						%td.1{ :style => "background: #427c7e;"}
+							%span.meeting-number X
+					%tr
+						%td.1{ :style => "padding-top:5px; background: #52898c;"}
+						%td.2.black-cell{ :style => "padding-top:5px; background: #d6eef0;"}
+							%br
+							$
+							%span.dollar-number 0
+							%br
+							Free!
+						%td.3{ :style => "padding-top:5px; background: #709ea0;"}
+							%br
+							$
+							%span.dollar-number 5
+							\/month
+							%br
+							30 Days Free
+						%td.1{ :style => "padding-top:5px; background: #52898c;"}
+							%br
+							$
+							%span.dollar-number 50
+							\/year
+							%br
+							30 Days Free
+.light{ :style => "padding-top: 0px;"}
+	.container#learn-more
+		.row.center
+			.span12
+				%p Get started for free!
+		.row.center#pricing{ :style => "padding-top: 0px;"}
+			= link_to "Request Free Invite", "#InviteModal", "data-toggle" => "modal", class: "apply-button"

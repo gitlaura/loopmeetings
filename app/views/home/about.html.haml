@@ -2,27 +2,26 @@
 	.container
 		.row
 			%h2.span12.bitter Let's have some fun.
-.row#about
-	.span2.light
-		.span4
-			%h1.bitter.center Helping People Find <br> Careers They Love
-	.span2.light
-		.span4
-			%h1.bitter.center Join Us On<br> Our Mission
-.row#about
-	.span2.light
-		.span4
+.light
+	.container#learn-more
+		.span5.one
+			%h1.bitter.center{style: "color: #003939; margin-bottom: 30px;"}Helping People Find Careers They Love
 			%p During the summer of 2013, our founder launched Loop to create an enjoyable alternative to bad networking events. Loop began as an experiment inside the walls of Sandbox Industries, a Startup Foundry in Chicago's West Loop, and quickly expanded.
 			%p Through trial and error, our team discovered that small-group coffee meetings were the answer to many networking problems. After all, who doesn't love chatting at a cozy coffee shop?
 			%p Loop was ultimately created to help friends and coworkers find jobs they love, grow their companies, and be successful in their careers. We sincerely hope that Loop allows you to build relationships with incredible people and helps you discover opportuntiies that you never knew existed.
 			%p To hear from our founder and learn more about the start of Loop, check out #{ link_to 'this blog article', href="http://blog.loopmeetings.com/post/63649113754/introducing-loop-like-networking-but-so-much-better"}.
-	.span3.blue
-		.span4
-			%p <b>Tweet at us</b> &nbsp #{ link_to '@LoopMeetings', href="https://twitter.com/loopmeetings", :target => :_blank}
-			%p <b>Join our LinkedIn community</b> &nbsp #{ link_to 'Loop Meetings Group', href="http://www.linkedin.com/groups?gid=6534322", :target => :_blank}
-			%p <b>See what we're up to on instagram</b> &nbsp #{ link_to '@LoopMeetings', href="https://instagram.com/loopmeetings", :target => :_blank}
-			%p <b>Check out our blog</b> &nbsp #{ link_to 'Blog.LoopMeetings.com', href="http://Blog.LoopMeetings.com"}
-			%br
-			%p <b>Email us at hello@loopmeetings.com</b>
-			%p <b>Interested in working with Loop?</b> Tell us how you'd like to help or check out #{ link_to 'these opportunities', jobs_path}.
-			%p <b>Want to write for the Loop blog?</b> Email us and we'll get you started.
+		.span5.two#pricing.center
+			%h1.bitter.center{style: "color: #003939; margin-bottom: 70px;"} Join Us On Our Mission
+			%table.table.table-bordered#pricing_table
+				%tbody
+					%tr
+						%td{ :style => "text-align: left; font-size: 18px; background: #52898c; width: 50%;" } 
+							%p Tweet at us #{ link_to '@LoopMeetings', href="https://twitter.com/loopmeetings", :target => :_blank}
+							%p Join our LinkedIn community #{ link_to 'Loop Meetings Group', href="http://www.linkedin.com/groups?gid=6534322", :target => :_blank}
+							%p See what we're up to on instagram #{ link_to '@LoopMeetings', href="https://instagram.com/loopmeetings", :target => :_blank}
+							%p Check out our blog #{ link_to 'Blog.LoopMeetings.com', href="http://blog.loopmeetings.com"}
+							%br
+							%br
+							%p Interested in working with Loop? Email us at hello@loopmeetings.com
+							%p Tell us how you'd like to help or check out #{ link_to 'these opportunities', jobs_path}.
+							%p Want to write for the Loop blog? Email us and we'll get you started.

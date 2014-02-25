@@ -7,26 +7,26 @@
 	.container#learn-more
 		.row
 			.span12
-				%h1.bitter Change Membership
-				%p Check out the options and upgrade your membership #{ link_to "here.", change_path}
-		.row
-			.span12
 				%h1.bitter Sign up for Loop Meetings
 		.row{style: "margin-left: 100px;"}
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
 				= link_to image_tag('loopmeeting_monthly.png'), monthly_path
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
-				= link_to image_tag('loopmeeting_140219.png'), meetingone_path
+				= link_to image_tag('loopmeeting_140305.png'), meetingone_path
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
-				= link_to image_tag('loopmeeting_140305.png'), meetingtwo_path
+				= link_to image_tag('loopmeeting_140402.png'), meetingtwo_path
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
-				= link_to image_tag('loopmeeting_140312.png'), meetingthree_path
+				= link_to image_tag('loopmeeting_140507.png'), meetingthree_path
 		.row
 			.span12
 				%h1.bitter Sign up for Loop Events
 		.row{style: "margin-left: 100px;"}
 			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
-				= link_to image_tag('trunkclub_140213.png'), href="http://loopofficetourattrunkclub.splashthat.com/"
+				= link_to image_tag('giveforward_140227.png'), href="http://loopofficetouratgiveforward.splashthat.com/", :target=>"_blank"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('digitas_140307.png'), href="http://loopofficetouratdigitas.splashthat.com/", :target=>"_blank"
+			.span2{style: "width:200px; box-shadow: 10px 10px 5px #888888; margin-bottom:25px;"}
+				= link_to image_tag('threadless_140328.png'), href="http://loopofficetouratthreadless.splashthat.com/", :target=>"_blank"
 		.row
 			.span12
 				%h1.bitter Past Loop Meetings
@@ -39,3 +39,7 @@
 			.span12
 				%h1.bitter Join Our LinkedIn Group
 				%p Want to talk with other Loop members? #{ link_to "Join our Members Only LinkedIn community.", href="http://www.linkedin.com/groups?home=&gid=6534322", :target => :_blank}
+		%br
+		.row
+			.span12
+				%p Cancel your membership #{ link_to "here.", cancel_path}

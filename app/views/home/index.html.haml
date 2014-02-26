@@ -2,7 +2,7 @@
 	.container
 		.row
 			%h1.span12.bitter Networking Sucks. We're Changing That.
-			%h4.span12{style: "font-size: 28px;"}  Loop sets up casual coffee meetings and events for young professionals in Chicago.
+			%h4.span12{style: "font-size: 24px;"}  Loop sets up casual coffee meetings and events for young professionals in Chicago.
 		.row
 			= link_to "JOIN FOR FREE", apply_path, class: "apply-button"
 			.clearfix
@@ -11,27 +11,32 @@
 	.container
 		.row.center
 			%br
-			%h2.span12.bitter{style: "font-size: 35px;"} Actually get to know awesome people in startups, technology, marketing, finance, non-profits, and more.
-		.row{style: "margin-left: 30px;"}
-			.span2
-				= image_tag "testimonial-natalie.png"
-			.span3.testimonial
-				%div{ :style => "padding: 0 13px;" }
-				%p Loop is the best way to meet other young professionals. No more awkward networking events for me!
-				%span4.bitter{ :style => "font-weight: bold;" } - Angie, Creative Director
-			.span2
-				= image_tag "testimonial-tom.png"
-			.span3.testimonial
-				%div{ :style => "padding: 0 12px;" }
-				%p Loop has been invaluable as an entrepreneur. I actually met one of my best employees over coffee.
-				%span4.bitter{ :style => "font-weight: bold;" } - Tom, Entrepreneur
-			.span2
-				= image_tag "testimonial-sara.png"
-			.span3.testimonial
-				%div{ :style => "padding: 0 12px;" }
-				%p I'm new to the city, and Loop has been helping me meet really great people quickly.
-				%br
-				%span4.bitter{ :style => "font-weight: bold;" } - Sara, Finance
+			%h2.span12.bitter{style: "font-size: 32px;"} Actually get to know awesome people in startups, technology, marketing, finance, non-profits, and more.
+		.row
+			#div{style: "width: 100%;"}
+				%table{style: "margin: 0 auto 0;"}
+					%trbody
+						%tr
+							%td
+								.span2
+									= image_tag "testimonial-natalie.png"
+								.span2.testimonial
+									%div{ :style => "padding: 0 13px;" }
+									%p Loop is the best way to meet other young professionals. No more awkward networking events for me!
+									%span4.bitter{ :style => "font-weight: bold;" } - Angie, Creative Director
+								.span2
+									= image_tag "testimonial-tom.png"
+								.span2.testimonial
+									%div{ :style => "padding: 0 12px;" }
+									%p Loop has been invaluable as an entrepreneur. I actually met one of my best employees over coffee.
+									%span4.bitter{ :style => "font-weight: bold;" } - Tom, Entrepreneur
+								.span2
+									= image_tag "testimonial-sara.png"
+								.span2.testimonial
+									%div{ :style => "padding: 0 12px;" }
+									%p I'm new to the city, and Loop has been helping me meet really great people quickly.
+									%br
+									%span4.bitter{ :style => "font-weight: bold;" } - Sara, Finance
 .light.center
 	.container
 		.row

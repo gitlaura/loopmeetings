@@ -2,25 +2,12 @@
 	.container
 		.row
 			%h2.span12.bitter Keep us in the loop.
-.light
+.light{style: "padding-bottom:5px;"}
 	.container
 		.row
 			%p{style:"margin-left: 50px"} #{link_to "Click here to go back to Members Only.", membersonly_path}
-
-<div id="outer" style="width: 100%;"><div id="wufoo-zd0csyx0wk5uov" style="width: 600px; margin: 0 auto;">If the form doesn't load in 10 seconds, please click <a href="https://loopmeetings.wufoo.com/forms/zd0csyx0wk5uov">here</a> to fill it out.
-</div></div>
-<script type="text/javascript">var zd0csyx0wk5uov;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'loopmeetings', 
-'formHash':'zd0csyx0wk5uov', 
-'autoResize':true,
-'height':'2082',
-'async':true,
-'header':'show', 
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { zd0csyx0wk5uov = new WufooForm();zd0csyx0wk5uov.initialize(options);zd0csyx0wk5uov.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
+#outer{style: "width: 100%;"}
+	#formstack{style: "width: 550px; margin-bottom: 20px; border-width: 1px; border-color: #d3d3d3;"}
+		%script{src: "https://www.formstack.com/forms/js.php?no_style=1&form=1703590&viewkey=Jfj2l0krMF&style_version=v3", type: "text/javascript"}
+		%noscript
+			%a{href: "https://www.formstack.com/forms/?1703590-Jfj2l0krMF", title: "Online Form"} Online Form - Update Profile

@@ -10,6 +10,9 @@ class HomeController < ApplicationController
   def membership
   end
 
+  def partnerships
+  end
+
   def lightbox
   end
 

@@ -17,6 +17,7 @@ Maven::Application.routes.draw do
 
   get 'faqs' => 'home#faqs', as: :faqs
   get 'partnerships' => 'home#partnerships', as: :partnerships
+  get 'newsletterfeature' => 'home#newsletterfeature', as: :newsletterfeature
   get 'lightbox' => 'home#lightbox', as: :lightbox
   get 'ideas' => 'home#ideas', as: :ideas
   get 'meetings' => 'home#meetings', as: :meetings

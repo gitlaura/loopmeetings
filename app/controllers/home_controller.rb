@@ -13,6 +13,9 @@ class HomeController < ApplicationController
   def partnerships
   end
 
+  def newsletterfeature
+  end
+
   def lightbox
   end
 
